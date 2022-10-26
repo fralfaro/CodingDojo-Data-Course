@@ -101,7 +101,9 @@ nav:
     - 9-UnsupervisedLearning/9-UnsupervisedLearning.ipynb
     - 10-DimensionalityReduction/10-DimensionalityReduction.ipynb
     - 11-NeuralNetworks/11-NeuralNetworks.ipynb
-    - 12-SQL/12-SQL.ipynb
+    - SQL:
+        - 12-SQL/12-SQL-md.md
+        - 12-SQL/12-SQL.ipynb
 
 
 
