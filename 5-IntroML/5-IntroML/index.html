@@ -1817,8 +1817,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a href="https://colab.research.google.com/github/fralfaro/MAT281_2022/blob/main/docs/lectures/data_manipulation/eda/eda.ipynb
-" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
+<p><a href="https://colab.research.google.com/github/fralfaro/CodingDojo-DataScience/blob/main/docs/5-IntroML/5-IntroML.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
 <h1 id="machine-learning">Machine Learning<a class="anchor-link" href="#machine-learning">&#182;</a></h1><h2 id="que-es-machine-learning">&#191;Qu&#233; es Machine Learning?<a class="anchor-link" href="#que-es-machine-learning">&#182;</a></h2>
 </div>
 </div>
@@ -2975,7 +2974,7 @@ jp-needs-light-background
 <span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">OneHotEncoder</span><span class="p">,</span> <span class="n">StandardScaler</span>
 <span class="kn">from</span> <span class="nn">sklearn.compose</span> <span class="kn">import</span> <span class="n">make_column_selector</span><span class="p">,</span> <span class="n">make_column_transformer</span>
 
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/housing.csv&#39;</span><span class="p">)[[</span><span class="s1">&#39;median_income&#39;</span><span class="p">,</span> <span class="s1">&#39;median_house_value&#39;</span><span class="p">,</span> <span class="s1">&#39;ocean_proximity&#39;</span><span class="p">]]</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/fralfaro/CodingDojo-DataScience/main/docs/5-IntroML/data/housing.csv&#39;</span><span class="p">)[[</span><span class="s1">&#39;median_income&#39;</span><span class="p">,</span> <span class="s1">&#39;median_house_value&#39;</span><span class="p">,</span> <span class="s1">&#39;ocean_proximity&#39;</span><span class="p">]]</span>
 <span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 <span class="n">df</span>
 </pre></div>
@@ -2984,7 +2983,7 @@ import numpy as np
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.compose import make_column_selector, make_column_transformer
 
-df = pd.read_csv('data/housing.csv')[['median_income', 'median_house_value', 'ocean_proximity']]
+df = pd.read_csv('https://raw.githubusercontent.com/fralfaro/CodingDojo-DataScience/main/docs/5-IntroML/data/housing.csv')[['median_income', 'median_house_value', 'ocean_proximity']]
 df.info()
 df</div>
     
@@ -3761,7 +3760,7 @@ memory usage: 1.4 MB
 <span class="n">set_config</span><span class="p">(</span><span class="n">display</span><span class="o">=</span><span class="s1">&#39;diagram&#39;</span><span class="p">)</span> <span class="c1"># Para mostrar como diagrama</span>
 
 <span class="c1"># Datos estadísticos sobre diferentes países</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/life_expectancy.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;CountryYear&#39;</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/fralfaro/CodingDojo-DataScience/main/docs/5-IntroML/data/life_expectancy.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;CountryYear&#39;</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 <span class="n">df</span>
 </pre></div>
@@ -3776,7 +3775,7 @@ from sklearn import set_config
 set_config(display='diagram') # Para mostrar como diagrama
 
 # Datos estadísticos sobre diferentes países
-df = pd.read_csv('data/life_expectancy.csv', index_col='CountryYear')
+df = pd.read_csv('https://raw.githubusercontent.com/fralfaro/CodingDojo-DataScience/main/docs/5-IntroML/data/life_expectancy.csv', index_col='CountryYear')
 df.info()
 df</div>
     
@@ -4876,7 +4875,7 @@ None
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li>Utilice como base el dataset <a href="data/housingprice.csv">housingprice.csv</a>. Este dataset incluye información variada de distintas casas junto con sus valores de venta (columna de interés). </li>
+<li>Utilice como base el dataset <a href="https://raw.githubusercontent.com/fralfaro/CodingDojo-DataScience/main/docs/5-IntroML/data/housingprice.csv">housingprice.csv</a>. Este dataset incluye información variada de distintas casas junto con sus valores de venta (columna de interés). </li>
 <li>Realice sobre dicho dataset las transformaciones que considere pertitentes, incluyendo:<ul>
 <li>Tratamiento de valores nulos</li>
 <li>Estandarización de valores numéricos</li>
@@ -4884,7 +4883,7 @@ None
 <li>División en datos de entrenamiento y prueba.</li>
 </ul>
 </li>
-<li>Puede encontrar información adicional sobre cada columna <a href="data/data_description_housing_price.txt">aquí</a> e información adicional sobre el set de datos <a href="https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/overview">aquí</a></li>
+<li>Puede encontrar información adicional sobre cada columna <a href="https://raw.githubusercontent.com/fralfaro/CodingDojo-DataScience/main/docs/5-IntroML/data/data_description_housing_price.txt">aquí</a> e información adicional sobre el set de datos <a href="https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/overview">aquí</a></li>
 </ul>
 
 </div>
