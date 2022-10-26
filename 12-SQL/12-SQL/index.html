@@ -415,6 +415,48 @@
     
   
   
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" type="checkbox" id="__nav_13" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13">
+          SQL
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="SQL" data-md-level="1">
+        <label class="md-nav__title" for="__nav_13">
+          <span class="md-nav__icon md-icon"></span>
+          SQL
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-SQL-md/" class="md-nav__link">
+        Structured Query Language (SQL)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
@@ -454,10 +496,31 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#problemas-basicos" class="md-nav__link">
+    Problemas Básicos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problemas-avanzados" class="md-nav__link">
+    Problemas Avanzados
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -491,6 +554,20 @@
         <li class="md-nav__item">
   <a href="#introduccion" class="md-nav__link">
     Introducción
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problemas-basicos" class="md-nav__link">
+    Problemas Básicos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problemas-avanzados" class="md-nav__link">
+    Problemas Avanzados
   </a>
   
 </li>
@@ -1572,8 +1649,8 @@ Licensed under the Apache License, Version 2.0.
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1595,37 +1672,129 @@ Licensed under the Apache License, Version 2.0.
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">create_engine</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-
-<span class="c1"># Crea variable para conexión con motor de base de datos. Si la base de datos no existe, se crea</span>
-<span class="n">engine</span> <span class="o">=</span> <span class="n">create_engine</span><span class="p">(</span><span class="s1">&#39;sqlite:///data/test.db&#39;</span><span class="p">,</span> <span class="n">echo</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="c1"># Conexión con base de datos</span>
-<span class="n">conn</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
-
-<span class="c1"># Se utiliza la variable de conexión con el motor para realizar queries SQL sobre la base de datos</span>
-<span class="n">query</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
-<span class="s1">    select * from Cliente</span>
-<span class="s1">&#39;&#39;&#39;</span>
-
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">engine</span><span class="p">)</span>
-
-<span class="n">df</span>
 </pre></div>
 <div id="cell-1" class="clipboard-copy-txt">from sqlalchemy import create_engine
-import pandas as pd
+import pandas as pd</div>
+    
+        </div>
+    </div>
 
-# Crea variable para conexión con motor de base de datos. Si la base de datos no existe, se crea
-engine = create_engine('sqlite:///data/test.db', echo=True)
-# Conexión con base de datos
-conn = engine.connect()
+</div>
+</div>
 
-# Se utiliza la variable de conexión con el motor para realizar queries SQL sobre la base de datos
-query = '''
-    select * from Cliente
-'''
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-2">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">logging</span>
 
-df = pd.read_sql_query(query, engine)
+<span class="n">logging</span><span class="o">.</span><span class="n">disable</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">WARNING</span><span class="p">)</span>
+</pre></div>
+<div id="cell-2" class="clipboard-copy-txt">import logging
 
-df</div>
+logging.disable(logging.WARNING)</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-3">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># create sqlite engine</span>
+<span class="n">engine</span> <span class="o">=</span> <span class="n">create_engine</span><span class="p">(</span><span class="s1">&#39;sqlite:///school.db&#39;</span><span class="p">,</span> <span class="n">echo</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="c1"># create connection to engine</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+</pre></div>
+<div id="cell-3" class="clipboard-copy-txt"># create sqlite engine
+engine = create_engine('sqlite:///school.db', echo=True)
+# create connection to engine
+conn = engine.connect()</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-4">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># add the dataframe as a table in sqlite</span>
+<span class="n">sqlite_table</span> <span class="o">=</span> <span class="s2">&quot;school_details&quot;</span>
+<span class="n">school</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/fralfaro/CodingDojo-DataScience/main/docs/12-SQL/data/School%20Details.csv&#39;</span><span class="p">)</span>
+<span class="n">school</span><span class="o">.</span><span class="n">to_sql</span><span class="p">(</span><span class="n">sqlite_table</span><span class="p">,</span> <span class="n">conn</span><span class="p">,</span> <span class="n">if_exists</span><span class="o">=</span><span class="s1">&#39;replace&#39;</span><span class="p">)</span>
+
+<span class="n">sqlite_table2</span> <span class="o">=</span> <span class="s2">&quot;school_facility_details&quot;</span>
+<span class="n">facility</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/fralfaro/CodingDojo-DataScience/main/docs/12-SQL/data/School</span><span class="si">%20F</span><span class="s1">acility%20Details.csv&#39;</span><span class="p">)</span>
+<span class="n">facility</span><span class="o">.</span><span class="n">to_sql</span><span class="p">(</span><span class="n">sqlite_table2</span><span class="p">,</span> <span class="n">conn</span><span class="p">,</span> <span class="n">if_exists</span><span class="o">=</span><span class="s1">&#39;replace&#39;</span><span class="p">)</span>
+</pre></div>
+<div id="cell-4" class="clipboard-copy-txt"># add the dataframe as a table in sqlite
+sqlite_table = "school_details"
+school = pd.read_csv('https://raw.githubusercontent.com/fralfaro/CodingDojo-DataScience/main/docs/12-SQL/data/School%20Details.csv')
+school.to_sql(sqlite_table, conn, if_exists='replace')
+
+sqlite_table2 = "school_facility_details"
+facility = pd.read_csv('https://raw.githubusercontent.com/fralfaro/CodingDojo-DataScience/main/docs/12-SQL/data/School%20Facility%20Details.csv')
+facility.to_sql(sqlite_table2, conn, if_exists='replace')</div>
     
         </div>
     </div>
@@ -1643,22 +1812,78 @@ df</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>2022-10-06 21:13:39,727 INFO sqlalchemy.engine.Engine 
-    select * from Cliente
 
-2022-10-06 21:13:39,728 INFO sqlalchemy.engine.Engine [raw sql] ()
-</pre>
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>1256</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-5">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Se utiliza la variable de conexión con el motor para realizar queries SQL sobre la base de datos</span>
+<span class="n">query</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">SELECT * FROM school_details</span>
+<span class="s1">&#39;&#39;&#39;</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">engine</span><span class="p">)</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+<div id="cell-5" class="clipboard-copy-txt"># Se utiliza la variable de conexión con el motor para realizar queries SQL sobre la base de datos
+query = '''
+SELECT * FROM school_details
+'''
+
+df = pd.read_sql_query(query, engine)
+
+df.head()</div>
+    
+        </div>
+    </div>
+
 </div>
 </div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
 
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
 
 
 
@@ -1681,57 +1906,153 @@ df</div>
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>id</th>
-      <th>nombre</th>
-      <th>run</th>
-      <th>dv</th>
+      <th>index</th>
+      <th>DistrictName</th>
+      <th>EstablishmentCode</th>
+      <th>EstablishmentName</th>
+      <th>BRCName</th>
+      <th>CRCName</th>
+      <th>SchoolLevel</th>
+      <th>ManagementName</th>
+      <th>LocalityHabitation</th>
+      <th>SubdivisionName</th>
+      <th>...</th>
+      <th>EstablishedDate</th>
+      <th>DistrictHQDistance (in Km)</th>
+      <th>CRCDistance (in Km)</th>
+      <th>BACDistance (in Km)</th>
+      <th>IsRecognized</th>
+      <th>RecognizedBy</th>
+      <th>ContactPersonName</th>
+      <th>LowestClass</th>
+      <th>HighestClass</th>
+      <th>BoardName</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>1</td>
-      <td>Patricio</td>
-      <td>11111111.0</td>
-      <td>1</td>
+      <td>0</td>
+      <td>East</td>
+      <td>S0169</td>
+      <td>BUDANG GOVERNMENT PRIMARY SCHOOL (E)</td>
+      <td>Duga Brc</td>
+      <td>Central Pendam Government Senior Secondary School</td>
+      <td>PS</td>
+      <td>State Govt.</td>
+      <td>BUDANG</td>
+      <td>Gangtok</td>
+      <td>...</td>
+      <td>28126</td>
+      <td>58.0</td>
+      <td>8.0</td>
+      <td>16.0</td>
+      <td>Recognized</td>
+      <td>HRDD</td>
+      <td>None</td>
+      <td>Class 1</td>
+      <td>Class 5</td>
+      <td>None</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>2</td>
-      <td>Pablo</td>
-      <td>22222222.0</td>
-      <td>2</td>
+      <td>1</td>
+      <td>East</td>
+      <td>S0099</td>
+      <td>CENTRAL PENDAM GOVERNMENT SENIOR SECONDARY SCHOOL</td>
+      <td>Duga Brc</td>
+      <td>Central Pendam Government Senior Secondary School</td>
+      <td>SSS</td>
+      <td>State Govt.</td>
+      <td>CENTRAL PENDAM</td>
+      <td>Gangtok</td>
+      <td>...</td>
+      <td>15342</td>
+      <td>50.0</td>
+      <td>0.0</td>
+      <td>6.0</td>
+      <td>Recognized</td>
+      <td>HRDD</td>
+      <td>None</td>
+      <td>Class 1</td>
+      <td>Class 12</td>
+      <td>C.B.S.E.</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>3</td>
-      <td>Jorge</td>
-      <td>33333333.0</td>
-      <td>3</td>
+      <td>2</td>
+      <td>East</td>
+      <td>S0848</td>
+      <td>CENTRAL POINT ACADEMY, CENTRAL PENDAM</td>
+      <td>Duga Brc</td>
+      <td>Central Pendam Government Senior Secondary School</td>
+      <td>SS</td>
+      <td>Private (Unaided)</td>
+      <td>UPPER BHURUNG CENTRAL PENDAM</td>
+      <td>Gangtok</td>
+      <td>...</td>
+      <td>37257.38680555556</td>
+      <td>49.0</td>
+      <td>1.5</td>
+      <td>6.0</td>
+      <td>Recognized</td>
+      <td>HRDD, GOVT. OF SIKKIM</td>
+      <td>None</td>
+      <td>Class 1</td>
+      <td>Class 10</td>
+      <td>C.B.S.E.</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>4</td>
-      <td>Sebastián</td>
-      <td>44444444.0</td>
-      <td>4</td>
+      <td>3</td>
+      <td>East</td>
+      <td>S0190</td>
+      <td>CHEURIBOTEY GOVERNMENT JUNIOR HIGH SCHOOL (E)</td>
+      <td>Duga Brc</td>
+      <td>Central Pendam Government Senior Secondary School</td>
+      <td>JHS</td>
+      <td>State Govt.</td>
+      <td>CHEURIBOTEY</td>
+      <td>Gangtok</td>
+      <td>...</td>
+      <td>28856</td>
+      <td>60.0</td>
+      <td>6.0</td>
+      <td>6.0</td>
+      <td>Recognized</td>
+      <td>State Govt.</td>
+      <td>None</td>
+      <td>Class 1</td>
+      <td>Class 8</td>
+      <td>None</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>5</td>
-      <td>Patricio</td>
-      <td>55555555.0</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>6</td>
-      <td>Pepe</td>
-      <td>NaN</td>
-      <td>6</td>
+      <td>4</td>
+      <td>East</td>
+      <td>S0111</td>
+      <td>DUGA GOVERNMENT SECONDARY SCHOOL</td>
+      <td>Duga Brc</td>
+      <td>Central Pendam Government Senior Secondary School</td>
+      <td>SS</td>
+      <td>State Govt.</td>
+      <td>DUGA</td>
+      <td>Gangtok</td>
+      <td>...</td>
+      <td>1828</td>
+      <td>52.0</td>
+      <td>0.0</td>
+      <td>0.5</td>
+      <td>Recognized</td>
+      <td>c.b.s.e.</td>
+      <td>None</td>
+      <td>Class 1</td>
+      <td>Class 10</td>
+      <td>C.B.S.E.</td>
     </tr>
   </tbody>
 </table>
+<p>5 rows × 31 columns</p>
 </div>
 </div>
 
@@ -1741,6 +2062,31 @@ df</div>
 
 </div>
 
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="problemas-basicos">Problemas B&#225;sicos<a class="anchor-link" href="#problemas-basicos">&#182;</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>Mostrar las primeras 5 filas de la tabla <code>school_details</code>.</li>
+</ul>
+
+</div>
+</div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -1748,12 +2094,12 @@ df</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-2">
+            <clipboard-copy for="cell-6">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -1763,21 +2109,19 @@ df</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Si deseas hacer lecturas de pequeños conjuntos de datos, se puede agregar </span>
-<span class="c1"># el parámetro chunk_size al método read_sql_query</span>
-
-<span class="n">it</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">engine</span><span class="p">,</span> <span class="n">chunksize</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">it</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">SELECT * FROM school_details</span>
+<span class="s1">LIMIT 5</span>
+<span class="s1">&#39;&#39;&#39;</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">engine</span><span class="p">)</span>
+<span class="n">df</span>
 </pre></div>
-<div id="cell-2" class="clipboard-copy-txt"># Si deseas hacer lecturas de pequeños conjuntos de datos, se puede agregar 
-# el parámetro chunk_size al método read_sql_query
-
-it = pd.read_sql_query(query, engine, chunksize=2)
-
-for i in it:
-    print(i)</div>
+<div id="cell-6" class="clipboard-copy-txt">query = '''
+SELECT * FROM school_details
+LIMIT 5
+'''
+df = pd.read_sql_query(query, engine)
+df</div>
     
         </div>
     </div>
@@ -1795,29 +2139,1612 @@ for i in it:
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>2022-10-06 21:17:58,981 INFO sqlalchemy.engine.Engine 
-    select * from Cliente
 
-2022-10-06 21:17:58,981 INFO sqlalchemy.engine.Engine [raw sql] ()
-   id    nombre       run  dv
-0   1  Patricio  11111111   1
-1   2     Pablo  22222222   2
-   id     nombre       run  dv
-0   3      Jorge  33333333   3
-1   4  Sebastián  44444444   4
-   id    nombre         run  dv
-0   5  Patricio  55555555.0   5
-1   6      Pepe         NaN   6
-</pre>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>index</th>
+      <th>DistrictName</th>
+      <th>EstablishmentCode</th>
+      <th>EstablishmentName</th>
+      <th>BRCName</th>
+      <th>CRCName</th>
+      <th>SchoolLevel</th>
+      <th>ManagementName</th>
+      <th>LocalityHabitation</th>
+      <th>SubdivisionName</th>
+      <th>...</th>
+      <th>EstablishedDate</th>
+      <th>DistrictHQDistance (in Km)</th>
+      <th>CRCDistance (in Km)</th>
+      <th>BACDistance (in Km)</th>
+      <th>IsRecognized</th>
+      <th>RecognizedBy</th>
+      <th>ContactPersonName</th>
+      <th>LowestClass</th>
+      <th>HighestClass</th>
+      <th>BoardName</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>East</td>
+      <td>S0169</td>
+      <td>BUDANG GOVERNMENT PRIMARY SCHOOL (E)</td>
+      <td>Duga Brc</td>
+      <td>Central Pendam Government Senior Secondary School</td>
+      <td>PS</td>
+      <td>State Govt.</td>
+      <td>BUDANG</td>
+      <td>Gangtok</td>
+      <td>...</td>
+      <td>28126</td>
+      <td>58.0</td>
+      <td>8.0</td>
+      <td>16.0</td>
+      <td>Recognized</td>
+      <td>HRDD</td>
+      <td>None</td>
+      <td>Class 1</td>
+      <td>Class 5</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>East</td>
+      <td>S0099</td>
+      <td>CENTRAL PENDAM GOVERNMENT SENIOR SECONDARY SCHOOL</td>
+      <td>Duga Brc</td>
+      <td>Central Pendam Government Senior Secondary School</td>
+      <td>SSS</td>
+      <td>State Govt.</td>
+      <td>CENTRAL PENDAM</td>
+      <td>Gangtok</td>
+      <td>...</td>
+      <td>15342</td>
+      <td>50.0</td>
+      <td>0.0</td>
+      <td>6.0</td>
+      <td>Recognized</td>
+      <td>HRDD</td>
+      <td>None</td>
+      <td>Class 1</td>
+      <td>Class 12</td>
+      <td>C.B.S.E.</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>East</td>
+      <td>S0848</td>
+      <td>CENTRAL POINT ACADEMY, CENTRAL PENDAM</td>
+      <td>Duga Brc</td>
+      <td>Central Pendam Government Senior Secondary School</td>
+      <td>SS</td>
+      <td>Private (Unaided)</td>
+      <td>UPPER BHURUNG CENTRAL PENDAM</td>
+      <td>Gangtok</td>
+      <td>...</td>
+      <td>37257.38680555556</td>
+      <td>49.0</td>
+      <td>1.5</td>
+      <td>6.0</td>
+      <td>Recognized</td>
+      <td>HRDD, GOVT. OF SIKKIM</td>
+      <td>None</td>
+      <td>Class 1</td>
+      <td>Class 10</td>
+      <td>C.B.S.E.</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>East</td>
+      <td>S0190</td>
+      <td>CHEURIBOTEY GOVERNMENT JUNIOR HIGH SCHOOL (E)</td>
+      <td>Duga Brc</td>
+      <td>Central Pendam Government Senior Secondary School</td>
+      <td>JHS</td>
+      <td>State Govt.</td>
+      <td>CHEURIBOTEY</td>
+      <td>Gangtok</td>
+      <td>...</td>
+      <td>28856</td>
+      <td>60.0</td>
+      <td>6.0</td>
+      <td>6.0</td>
+      <td>Recognized</td>
+      <td>State Govt.</td>
+      <td>None</td>
+      <td>Class 1</td>
+      <td>Class 8</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>East</td>
+      <td>S0111</td>
+      <td>DUGA GOVERNMENT SECONDARY SCHOOL</td>
+      <td>Duga Brc</td>
+      <td>Central Pendam Government Senior Secondary School</td>
+      <td>SS</td>
+      <td>State Govt.</td>
+      <td>DUGA</td>
+      <td>Gangtok</td>
+      <td>...</td>
+      <td>1828</td>
+      <td>52.0</td>
+      <td>0.0</td>
+      <td>0.5</td>
+      <td>Recognized</td>
+      <td>c.b.s.e.</td>
+      <td>None</td>
+      <td>Class 1</td>
+      <td>Class 10</td>
+      <td>C.B.S.E.</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 31 columns</p>
 </div>
 </div>
 
 </div>
 
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>Seleccionar los valores únicos de la columna <code>DistrictName</code> de la tabla <code>school_details</code>.</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-7">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">SELECT DISTINCT(DistrictName) FROM school_details</span>
+<span class="s1">&#39;&#39;&#39;</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">engine</span><span class="p">)</span>
+<span class="n">df</span>
+</pre></div>
+<div id="cell-7" class="clipboard-copy-txt">query = '''
+SELECT DISTINCT(DistrictName) FROM school_details
+'''
+df = pd.read_sql_query(query, engine)
+df</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>DistrictName</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>East</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>North</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>South</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>West</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>Seleccionar y cambiar el nombre de la columna <code>EstablishmentCode</code> por <code>ECode</code> de la tabla <code>school_details</code>.</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-8">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">SELECT EstablishmentCode AS ECode FROM school_details</span>
+<span class="s1">&#39;&#39;&#39;</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">engine</span><span class="p">)</span>
+<span class="n">df</span>
+</pre></div>
+<div id="cell-8" class="clipboard-copy-txt">query = '''
+SELECT EstablishmentCode AS ECode FROM school_details
+'''
+df = pd.read_sql_query(query, engine)
+df</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ECode</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>S0169</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>S0099</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>S0848</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>S0190</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>S0111</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1244</th>
+      <td>S0336</td>
+    </tr>
+    <tr>
+      <th>1245</th>
+      <td>S0591</td>
+    </tr>
+    <tr>
+      <th>1246</th>
+      <td>S1045</td>
+    </tr>
+    <tr>
+      <th>1247</th>
+      <td>S0340</td>
+    </tr>
+    <tr>
+      <th>1248</th>
+      <td>S0542</td>
+    </tr>
+  </tbody>
+</table>
+<p>1249 rows × 1 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>Filtrar el conjunto de datos la columna <code>SchoolLevel</code> por <code>PS</code> de la tabla <code>school_details</code>.</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-9">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">SELECT * FROM school_details</span>
+<span class="s1">WHERE SchoolLevel = &#39;PS&#39;</span>
+<span class="s1">&#39;&#39;&#39;</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">engine</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+<div id="cell-9" class="clipboard-copy-txt">query = '''
+SELECT * FROM school_details
+WHERE SchoolLevel = 'PS'
+'''
+df = pd.read_sql_query(query, engine)
+df.head()</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>index</th>
+      <th>DistrictName</th>
+      <th>EstablishmentCode</th>
+      <th>EstablishmentName</th>
+      <th>BRCName</th>
+      <th>CRCName</th>
+      <th>SchoolLevel</th>
+      <th>ManagementName</th>
+      <th>LocalityHabitation</th>
+      <th>SubdivisionName</th>
+      <th>...</th>
+      <th>EstablishedDate</th>
+      <th>DistrictHQDistance (in Km)</th>
+      <th>CRCDistance (in Km)</th>
+      <th>BACDistance (in Km)</th>
+      <th>IsRecognized</th>
+      <th>RecognizedBy</th>
+      <th>ContactPersonName</th>
+      <th>LowestClass</th>
+      <th>HighestClass</th>
+      <th>BoardName</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>East</td>
+      <td>S0169</td>
+      <td>BUDANG GOVERNMENT PRIMARY SCHOOL (E)</td>
+      <td>Duga Brc</td>
+      <td>Central Pendam Government Senior Secondary School</td>
+      <td>PS</td>
+      <td>State Govt.</td>
+      <td>BUDANG</td>
+      <td>Gangtok</td>
+      <td>...</td>
+      <td>28126</td>
+      <td>58.0</td>
+      <td>8.0</td>
+      <td>16.0</td>
+      <td>Recognized</td>
+      <td>HRDD</td>
+      <td>None</td>
+      <td>Class 1</td>
+      <td>Class 5</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>5</td>
+      <td>East</td>
+      <td>S0856</td>
+      <td>EASWARAMMA SAI GURUKOOL ACCADEMY</td>
+      <td>Duga Brc</td>
+      <td>Central Pendam Government Senior Secondary School</td>
+      <td>PS</td>
+      <td>Private (Unaided)</td>
+      <td>RALUNG</td>
+      <td>Gangtok</td>
+      <td>...</td>
+      <td>40179.66805555556</td>
+      <td>0.0</td>
+      <td>0.2</td>
+      <td>0.2</td>
+      <td>Recognized</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Class 1</td>
+      <td>Class 5</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>6</td>
+      <td>East</td>
+      <td>S0870</td>
+      <td>ETERNAL ENGLISH SCHOOL, WEST PENDAM</td>
+      <td>Duga Brc</td>
+      <td>Central Pendam Government Senior Secondary School</td>
+      <td>PS</td>
+      <td>Private (Unaided)</td>
+      <td>SAKHU WEST PENDAM</td>
+      <td>Gangtok</td>
+      <td>...</td>
+      <td>37300.66805555556</td>
+      <td>42.0</td>
+      <td>3.0</td>
+      <td>4.0</td>
+      <td>Recognized</td>
+      <td>HRDD OF SIKKIM</td>
+      <td>None</td>
+      <td>Class 1</td>
+      <td>Class 5</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>7</td>
+      <td>East</td>
+      <td>S0157</td>
+      <td>KHANI GOAN GOVERNMENT PRIMARY SCHOOL</td>
+      <td>Duga Brc</td>
+      <td>Central Pendam Government Senior Secondary School</td>
+      <td>PS</td>
+      <td>State Govt.</td>
+      <td>WEST PENDAM</td>
+      <td>Gangtok</td>
+      <td>...</td>
+      <td>29587</td>
+      <td>45.0</td>
+      <td>5.0</td>
+      <td>4.0</td>
+      <td>Recognized</td>
+      <td>State Govt.</td>
+      <td>None</td>
+      <td>Class 1</td>
+      <td>Class 5</td>
+      <td>C.B.S.E.</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>8</td>
+      <td>East</td>
+      <td>S0876</td>
+      <td>NEW GARDEN BOARDING SCHOOL (SAJONG)</td>
+      <td>Duga Brc</td>
+      <td>Central Pendam Government Senior Secondary School</td>
+      <td>PS</td>
+      <td>Private (Unaided)</td>
+      <td>CENTRAL PENDAM</td>
+      <td>Gangtok</td>
+      <td>...</td>
+      <td>33604.66805555556</td>
+      <td>40.0</td>
+      <td>7.0</td>
+      <td>7.0</td>
+      <td>Not Recognized</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Class 1</td>
+      <td>Class 4</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 31 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="problemas-avanzados">Problemas Avanzados<a class="anchor-link" href="#problemas-avanzados">&#182;</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>¿Cuál es la distancia BAC promedio (en Km)? Cambie el nombre de la columna de salida a "avg_bac distancia".</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-10">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Write your SQL query in this string</span>
+<span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">SELECT AVG(&quot;BACDistance (in Km)&quot;) AS avg_bac_distance</span>
+<span class="s2">FROM school_details</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="c1"># Read the sql query into pandas to view the results</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="n">sql</span><span class="p">,</span> <span class="n">engine</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+<div id="cell-10" class="clipboard-copy-txt"># Write your SQL query in this string
+sql = """
+SELECT AVG("BACDistance (in Km)") AS avg_bac_distance
+FROM school_details
+"""
+
+# Read the sql query into pandas to view the results
+df = pd.read_sql_query(sql, engine)
+df.head()</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>avg_bac_distance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>12.681822</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>¿Cuál es la distancia BAC promedio (en Km) por nivel escolar? Ordene los resultados del promedio más alto al promedio más bajo.</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-11">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Write your SQL query in this string</span>
+<span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">SELECT SchoolLevel, AVG(&quot;BACDistance (in Km)&quot;) as avg_bac_distance</span>
+<span class="s2">FROM school_details</span>
+<span class="s2">GROUP BY SchoolLevel</span>
+<span class="s2">ORDER BY avg_bac_distance DESC</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="c1"># Read the sql query into pandas to view the results</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="n">sql</span><span class="p">,</span> <span class="n">engine</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+<div id="cell-11" class="clipboard-copy-txt"># Write your SQL query in this string
+sql = """
+SELECT SchoolLevel, AVG("BACDistance (in Km)") as avg_bac_distance
+FROM school_details
+GROUP BY SchoolLevel
+ORDER BY avg_bac_distance DESC
+"""
+
+# Read the sql query into pandas to view the results
+df = pd.read_sql_query(sql, engine)
+df.head()</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>SchoolLevel</th>
+      <th>avg_bac_distance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>JHS</td>
+      <td>13.692647</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>PS</td>
+      <td>12.830787</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>SS</td>
+      <td>12.630872</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>SSS</td>
+      <td>10.863095</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>LPS</td>
+      <td>5.368421</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>Repita la consulta anterior, pero solo muestre resultados donde la distancia promedio sea de al menos 10 km.</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-12">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Write your SQL query in this string</span>
+<span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">SELECT SchoolLevel, AVG(&quot;BACDistance (in Km)&quot;) as avg_bac_distance</span>
+<span class="s2">FROM school_details</span>
+<span class="s2">GROUP BY SchoolLevel</span>
+<span class="s2">HAVING avg_bac_distance &gt;= 10</span>
+<span class="s2">ORDER BY avg_bac_distance DESC</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="c1"># Read the sql query into pandas to view the results</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="n">sql</span><span class="p">,</span> <span class="n">engine</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+<div id="cell-12" class="clipboard-copy-txt"># Write your SQL query in this string
+sql = """
+SELECT SchoolLevel, AVG("BACDistance (in Km)") as avg_bac_distance
+FROM school_details
+GROUP BY SchoolLevel
+HAVING avg_bac_distance >= 10
+ORDER BY avg_bac_distance DESC
+"""
+
+# Read the sql query into pandas to view the results
+df = pd.read_sql_query(sql, engine)
+df.head()</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>SchoolLevel</th>
+      <th>avg_bac_distance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>JHS</td>
+      <td>13.692647</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>PS</td>
+      <td>12.830787</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>SS</td>
+      <td>12.630872</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>SSS</td>
+      <td>10.863095</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>Une las dos tablas juntas (school_details y school_facility_details). Comience mostrando todas las columnas, pero limite las filas resultantes a solo 2.</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-13">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Write your SQL query in this string</span>
+<span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">SELECT *</span>
+<span class="s2">FROM school_details s</span>
+<span class="s2">  JOIN school_facility_details f</span>
+<span class="s2">  ON f.EstablishmentCode = s.EstablishmentCode</span>
+<span class="s2">LIMIT 2</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="c1"># Read the sql query into pandas to view the results</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="n">sql</span><span class="p">,</span> <span class="n">engine</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+<div id="cell-13" class="clipboard-copy-txt"># Write your SQL query in this string
+sql = """
+SELECT *
+FROM school_details s
+  JOIN school_facility_details f
+  ON f.EstablishmentCode = s.EstablishmentCode
+LIMIT 2
+"""
+
+# Read the sql query into pandas to view the results
+df = pd.read_sql_query(sql, engine)
+df.head()</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>index</th>
+      <th>DistrictName</th>
+      <th>EstablishmentCode</th>
+      <th>EstablishmentName</th>
+      <th>BRCName</th>
+      <th>CRCName</th>
+      <th>SchoolLevel</th>
+      <th>ManagementName</th>
+      <th>LocalityHabitation</th>
+      <th>SubdivisionName</th>
+      <th>...</th>
+      <th>EstablishmentName</th>
+      <th>IsLibraryAvailable</th>
+      <th>AvailableBooksCount</th>
+      <th>IsFireExtgAvailable</th>
+      <th>ExtinguisherCount</th>
+      <th>HOIRoomAvailable</th>
+      <th>IsStaffRoomAvailable</th>
+      <th>NoofStaffRoom</th>
+      <th>IsLockerForStaffAvailable</th>
+      <th>IsSportsStoreRoomAvailable</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>East</td>
+      <td>S0169</td>
+      <td>BUDANG GOVERNMENT PRIMARY SCHOOL (E)</td>
+      <td>Duga Brc</td>
+      <td>Central Pendam Government Senior Secondary School</td>
+      <td>PS</td>
+      <td>State Govt.</td>
+      <td>BUDANG</td>
+      <td>Gangtok</td>
+      <td>...</td>
+      <td>BUDANG GOVERNMENT PRIMARY SCHOOL (E)</td>
+      <td>Available</td>
+      <td>100</td>
+      <td>Available</td>
+      <td>2</td>
+      <td>Available</td>
+      <td>Available</td>
+      <td>1</td>
+      <td>Not Available</td>
+      <td>Not Available</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>East</td>
+      <td>S0099</td>
+      <td>CENTRAL PENDAM GOVERNMENT SENIOR SECONDARY SCHOOL</td>
+      <td>Duga Brc</td>
+      <td>Central Pendam Government Senior Secondary School</td>
+      <td>SSS</td>
+      <td>State Govt.</td>
+      <td>CENTRAL PENDAM</td>
+      <td>Gangtok</td>
+      <td>...</td>
+      <td>CENTRAL PENDAM GOVERNMENT SENIOR SECONDARY SCHOOL</td>
+      <td>Available</td>
+      <td>0</td>
+      <td>Available</td>
+      <td>5</td>
+      <td>Available</td>
+      <td>Available</td>
+      <td>2</td>
+      <td>Not Available</td>
+      <td>Available</td>
+    </tr>
+  </tbody>
+</table>
+<p>2 rows × 43 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>Ahora, seleccione solo las escuelas donde SchoolLevel es "PS" que no tienen bibliotecas.</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-14">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Write your SQL query in this string</span>
+<span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">SELECT s.EstablishmentName, s.SchoolLevel, f.IsLibraryAvailable</span>
+<span class="s2">FROM school_details s</span>
+<span class="s2">  JOIN school_facility_details f</span>
+<span class="s2">  ON f.EstablishmentCode = s.EstablishmentCode</span>
+<span class="s2">WHERE s.SchoolLevel = &#39;PS&#39; AND f.IsLibraryAvailable = &#39;Not Available&#39;</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="c1"># Read the sql query into pandas to view the results</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="n">sql</span><span class="p">,</span> <span class="n">engine</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+<div id="cell-14" class="clipboard-copy-txt"># Write your SQL query in this string
+sql = """
+SELECT s.EstablishmentName, s.SchoolLevel, f.IsLibraryAvailable
+FROM school_details s
+  JOIN school_facility_details f
+  ON f.EstablishmentCode = s.EstablishmentCode
+WHERE s.SchoolLevel = 'PS' AND f.IsLibraryAvailable = 'Not Available'
+"""
+
+# Read the sql query into pandas to view the results
+df = pd.read_sql_query(sql, engine)
+df.head()</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>EstablishmentName</th>
+      <th>SchoolLevel</th>
+      <th>IsLibraryAvailable</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>EASWARAMMA SAI GURUKOOL ACCADEMY</td>
+      <td>PS</td>
+      <td>Not Available</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>NEW GARDEN BOARDING SCHOOL (SAJONG)</td>
+      <td>PS</td>
+      <td>Not Available</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>SARASWATI SHISHU VIDHYALAYA, BUDANG</td>
+      <td>PS</td>
+      <td>Not Available</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>SAWNEY GOVERNMENT PRIMARY SCHOOL</td>
+      <td>PS</td>
+      <td>Not Available</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>UPPER PACHAK GOVERNMENT PRIMARY SCHOOL</td>
+      <td>PS</td>
+      <td>Not Available</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>Construya a partir de la consulta anterior, pero ordene los resultados alfabéticamente por nombre.</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-15">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Write your SQL query in this string</span>
+<span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">SELECT s.EstablishmentName, s.SchoolLevel, f.IsLibraryAvailable</span>
+<span class="s2">FROM school_details s</span>
+<span class="s2">  JOIN school_facility_details f</span>
+<span class="s2">  ON f.EstablishmentCode = s.EstablishmentCode</span>
+<span class="s2">WHERE s.SchoolLevel = &#39;PS&#39; AND f.IsLibraryAvailable = &#39;Not Available&#39;</span>
+<span class="s2">ORDER BY s.EstablishmentName</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="c1"># Read the sql query into pandas to view the results</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="n">sql</span><span class="p">,</span> <span class="n">engine</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+<div id="cell-15" class="clipboard-copy-txt"># Write your SQL query in this string
+sql = """
+SELECT s.EstablishmentName, s.SchoolLevel, f.IsLibraryAvailable
+FROM school_details s
+  JOIN school_facility_details f
+  ON f.EstablishmentCode = s.EstablishmentCode
+WHERE s.SchoolLevel = 'PS' AND f.IsLibraryAvailable = 'Not Available'
+ORDER BY s.EstablishmentName
+"""
+
+# Read the sql query into pandas to view the results
+df = pd.read_sql_query(sql, engine)
+df.head()</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>EstablishmentName</th>
+      <th>SchoolLevel</th>
+      <th>IsLibraryAvailable</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>(I.E.C) INDIAN EVANGALISTIC CRUSADE MISSION PR...</td>
+      <td>PS</td>
+      <td>Not Available</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>10TH MILE GOVERNMENT PRIMARY SCHOOL</td>
+      <td>PS</td>
+      <td>Not Available</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AAPGAZI GOVERNMENT PRIMARY SCHOOL</td>
+      <td>PS</td>
+      <td>Not Available</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AARUBOTEY GOVERNMENT PRIMARY SCHOOL</td>
+      <td>PS</td>
+      <td>Not Available</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>AHO-YANGTAM GOVERNMENT PRIMARY SCHOOL</td>
+      <td>PS</td>
+      <td>Not Available</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-16">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Close the database connection</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+<div id="cell-16" class="clipboard-copy-txt"># Close the database connection
+conn.close()</div>
+    
+        </div>
+    </div>
+
+</div>
 </div>
 
 </div>
@@ -1843,7 +3770,7 @@ for i in it:
     <nav class="md-footer__inner md-grid" aria-label="Pie">
       
         
-        <a href="../../11-NeuralNetworks/11-NeuralNetworks/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Redes Neuronales" rel="prev">
+        <a href="../12-SQL-md/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Structured Query Language (SQL)" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1852,7 +3779,7 @@ for i in it:
               <span class="md-footer__direction">
                 Anterior
               </span>
-              Redes Neuronales
+              Structured Query Language (SQL)
             </div>
           </div>
         </a>
