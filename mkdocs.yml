@@ -91,19 +91,19 @@ plugins:
 nav:
     - Home: index.md
     - 1-PythonBasics/1-PythonBasics.ipynb
-    - 2-Pandas/2-Pandas.ipynb
-    - 3-Matplotlib/3-Matplotlib.ipynb
-    - 4-StatisticalInference/4-StatisticalInference.ipynb
-    - 5-IntroML/5-IntroML.ipynb
-    - 6-RegressionModels/6-RegressionModels.ipynb
-    - 7-ClassificationModels/7-ClassificationModels.ipynb
-    - 8-Boosting/8-Boosting.ipynb
-    - 9-UnsupervisedLearning/9-UnsupervisedLearning.ipynb
-    - 10-DimensionalityReduction/10-DimensionalityReduction.ipynb
-    - 11-NeuralNetworks/11-NeuralNetworks.ipynb
-    - SQL:
-        - 12-SQL/12-SQL-md.md
-        - 12-SQL/12-SQL.ipynb
+    #- 2-Pandas/2-Pandas.ipynb
+    #- 3-Matplotlib/3-Matplotlib.ipynb
+    #- 4-StatisticalInference/4-StatisticalInference.ipynb
+    #- 5-IntroML/5-IntroML.ipynb
+    #- 6-RegressionModels/6-RegressionModels.ipynb
+    #- 7-ClassificationModels/7-ClassificationModels.ipynb
+    #- 8-Boosting/8-Boosting.ipynb
+    #- 9-UnsupervisedLearning/9-UnsupervisedLearning.ipynb
+    #- 10-DimensionalityReduction/10-DimensionalityReduction.ipynb
+    #- 11-NeuralNetworks/11-NeuralNetworks.ipynb
+    #- SQL:
+    #    - 12-SQL/12-SQL-md.md
+    #    - 12-SQL/12-SQL.ipynb
 
 
 
