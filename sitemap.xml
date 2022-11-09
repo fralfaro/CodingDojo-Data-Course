@@ -2,22 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://github.com/fralfaro/CodingDojo-DataScience/</loc>
-         <lastmod>2022-11-08</lastmod>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/CodingDojo-DataScience/__init__/</loc>
-         <lastmod>2022-11-08</lastmod>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/CodingDojo-DataScience/1-PythonBasics/1-PythonBasics/</loc>
-         <lastmod>2022-11-08</lastmod>
+         <lastmod>2022-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/CodingDojo-DataScience/1.5-numpy/1.5-numpy/</loc>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/CodingDojo-DataScience/2-Pandas/2-Pandas/</loc>
-         <lastmod>2022-11-08</lastmod>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

@@ -12,14 +12,14 @@
         <meta name="author" content="Francisco Alfaro">
       
       
-        <link rel="canonical" href="https://github.com/fralfaro/CodingDojo-DataScience/1-PythonBasics/1-PythonBasics/">
+        <link rel="canonical" href="https://github.com/fralfaro/CodingDojo-DataScience/1.5-numpy/1.5-numpy/">
       
       <link rel="icon" href="../../images/logo_cd.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>Introducción - CodingDojo - DataScience</title>
+        <title>Numpy - CodingDojo - DataScience</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduccion" class="md-skip">
+        <a href="#numpy" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introducción
+              Numpy
             
           </span>
         </div>
@@ -247,6 +247,21 @@
 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../../1-PythonBasics/1-PythonBasics/" class="md-nav__link">
+        Introducción
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -259,12 +274,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Introducción
+          Numpy
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Introducción
+        Numpy
       </a>
       
         
@@ -283,134 +298,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#que-es-data-science" class="md-nav__link">
-    ¿Qué es Data Science?
+  <a href="#introduccion" class="md-nav__link">
+    Introducción
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nuestra-caja-de-herramientas" class="md-nav__link">
-    Nuestra caja de herramientas
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#por-que-python" class="md-nav__link">
-    ¿Por qué Python?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#por-que-google-colaboratory" class="md-nav__link">
-    ¿Por qué Google Colaboratory?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#actividad-0" class="md-nav__link">
-    Actividad 0
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#herramientas-alternativas-anaconda" class="md-nav__link">
-    Herramientas alternativas: Anaconda
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#python" class="md-nav__link">
-    Python
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#comentarios" class="md-nav__link">
-    Comentarios
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#variables" class="md-nav__link">
-    Variables
-  </a>
-  
-    <nav class="md-nav" aria-label="Variables">
+    <nav class="md-nav" aria-label="Introducción">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#asignacion-a-variables" class="md-nav__link">
-    Asignación a Variables
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#variables-tipos-de-datos" class="md-nav__link">
-    Variables: Tipos de datos
-  </a>
-  
-    <nav class="md-nav" aria-label="Variables: Tipos de datos">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#numeros-enteros" class="md-nav__link">
-    Números enteros
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#numeros-reales" class="md-nav__link">
-    Números Reales
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#string" class="md-nav__link">
-    String
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#valores-logicos" class="md-nav__link">
-    Valores Lógicos
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#numeros-complejos" class="md-nav__link">
-    Números Complejos
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#salida-de-datos-print" class="md-nav__link">
-    Salida de datos: Print
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#entrada-de-datos-input" class="md-nav__link">
-    Entrada de datos: Input
+  <a href="#por-que-usar-numpy" class="md-nav__link">
+    ¿ Por qué usar Numpy ?
   </a>
   
 </li>
@@ -421,16 +318,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tipos-de-datos-compuestos-listas" class="md-nav__link">
-    Tipos de datos compuestos: Listas
+  <a href="#conceptos-basicos" class="md-nav__link">
+    Conceptos básicos
   </a>
   
-    <nav class="md-nav" aria-label="Tipos de datos compuestos: Listas">
+    <nav class="md-nav" aria-label="Conceptos básicos">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#operaciones" class="md-nav__link">
-    Operaciones
+  <a href="#manipulacion-de-datos" class="md-nav__link">
+    Manipulación de datos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operaciones-basicas" class="md-nav__link">
+    Operaciones Básicas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#broadcasting" class="md-nav__link">
+    Broadcasting
   </a>
   
 </li>
@@ -441,96 +352,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tipos-de-datos-compuestos-tuplas" class="md-nav__link">
-    Tipos de datos compuestos: Tuplas
-  </a>
-  
-    <nav class="md-nav" aria-label="Tipos de datos compuestos: Tuplas">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#operaciones_1" class="md-nav__link">
-    Operaciones
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tipos-de-datos-compuestos-diccionarios" class="md-nav__link">
-    Tipos de datos compuestos: Diccionarios
-  </a>
-  
-    <nav class="md-nav" aria-label="Tipos de datos compuestos: Diccionarios">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#operaciones_2" class="md-nav__link">
-    Operaciones
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tipos-de-datos-compuestos-range" class="md-nav__link">
-    Tipos de datos compuestos: Range
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#determinando-un-tipo-de-dato-type" class="md-nav__link">
-    Determinando un tipo de dato: type()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#estructuras-de-control" class="md-nav__link">
-    Estructuras de Control
-  </a>
-  
-    <nav class="md-nav" aria-label="Estructuras de Control">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#estructura-condicional-if" class="md-nav__link">
-    Estructura Condicional: if
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#estructura-de-control-for" class="md-nav__link">
-    Estructura de Control: for
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#estructura-de-control-while" class="md-nav__link">
-    Estructura de Control: while
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#actividad-1" class="md-nav__link">
-    Actividad 1
+  <a href="#ejemplo" class="md-nav__link">
+    Ejemplo
   </a>
   
 </li>
@@ -539,21 +362,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../1.5-numpy/1.5-numpy/" class="md-nav__link">
-        Numpy
-      </a>
     </li>
   
 
@@ -600,134 +408,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#que-es-data-science" class="md-nav__link">
-    ¿Qué es Data Science?
+  <a href="#introduccion" class="md-nav__link">
+    Introducción
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nuestra-caja-de-herramientas" class="md-nav__link">
-    Nuestra caja de herramientas
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#por-que-python" class="md-nav__link">
-    ¿Por qué Python?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#por-que-google-colaboratory" class="md-nav__link">
-    ¿Por qué Google Colaboratory?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#actividad-0" class="md-nav__link">
-    Actividad 0
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#herramientas-alternativas-anaconda" class="md-nav__link">
-    Herramientas alternativas: Anaconda
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#python" class="md-nav__link">
-    Python
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#comentarios" class="md-nav__link">
-    Comentarios
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#variables" class="md-nav__link">
-    Variables
-  </a>
-  
-    <nav class="md-nav" aria-label="Variables">
+    <nav class="md-nav" aria-label="Introducción">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#asignacion-a-variables" class="md-nav__link">
-    Asignación a Variables
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#variables-tipos-de-datos" class="md-nav__link">
-    Variables: Tipos de datos
-  </a>
-  
-    <nav class="md-nav" aria-label="Variables: Tipos de datos">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#numeros-enteros" class="md-nav__link">
-    Números enteros
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#numeros-reales" class="md-nav__link">
-    Números Reales
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#string" class="md-nav__link">
-    String
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#valores-logicos" class="md-nav__link">
-    Valores Lógicos
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#numeros-complejos" class="md-nav__link">
-    Números Complejos
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#salida-de-datos-print" class="md-nav__link">
-    Salida de datos: Print
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#entrada-de-datos-input" class="md-nav__link">
-    Entrada de datos: Input
+  <a href="#por-que-usar-numpy" class="md-nav__link">
+    ¿ Por qué usar Numpy ?
   </a>
   
 </li>
@@ -738,16 +428,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tipos-de-datos-compuestos-listas" class="md-nav__link">
-    Tipos de datos compuestos: Listas
+  <a href="#conceptos-basicos" class="md-nav__link">
+    Conceptos básicos
   </a>
   
-    <nav class="md-nav" aria-label="Tipos de datos compuestos: Listas">
+    <nav class="md-nav" aria-label="Conceptos básicos">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#operaciones" class="md-nav__link">
-    Operaciones
+  <a href="#manipulacion-de-datos" class="md-nav__link">
+    Manipulación de datos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operaciones-basicas" class="md-nav__link">
+    Operaciones Básicas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#broadcasting" class="md-nav__link">
+    Broadcasting
   </a>
   
 </li>
@@ -758,96 +462,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tipos-de-datos-compuestos-tuplas" class="md-nav__link">
-    Tipos de datos compuestos: Tuplas
-  </a>
-  
-    <nav class="md-nav" aria-label="Tipos de datos compuestos: Tuplas">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#operaciones_1" class="md-nav__link">
-    Operaciones
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tipos-de-datos-compuestos-diccionarios" class="md-nav__link">
-    Tipos de datos compuestos: Diccionarios
-  </a>
-  
-    <nav class="md-nav" aria-label="Tipos de datos compuestos: Diccionarios">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#operaciones_2" class="md-nav__link">
-    Operaciones
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tipos-de-datos-compuestos-range" class="md-nav__link">
-    Tipos de datos compuestos: Range
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#determinando-un-tipo-de-dato-type" class="md-nav__link">
-    Determinando un tipo de dato: type()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#estructuras-de-control" class="md-nav__link">
-    Estructuras de Control
-  </a>
-  
-    <nav class="md-nav" aria-label="Estructuras de Control">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#estructura-condicional-if" class="md-nav__link">
-    Estructura Condicional: if
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#estructura-de-control-for" class="md-nav__link">
-    Estructura de Control: for
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#estructura-de-control-while" class="md-nav__link">
-    Estructura de Control: while
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#actividad-1" class="md-nav__link">
-    Actividad 1
+  <a href="#ejemplo" class="md-nav__link">
+    Ejemplo
   </a>
   
 </li>
@@ -1902,75 +1518,23 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a href="https://colab.research.google.com/github/fralfaro/CodingDojo-DataScience/blob/main/docs/1-PythonBasics/1-PythonBasics.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
-<h1 id="introduccion">Introducci&#243;n<a class="anchor-link" href="#introduccion">&#182;</a></h1><h2 id="que-es-data-science">&#191;Qu&#233; es Data Science?<a class="anchor-link" href="#que-es-data-science">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><a href="https://colab.research.google.com/github/fralfaro/CodingDojo-DataScience/blob/main/docs/1.5-numpy/1.5-numpy.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
+<h1 id="numpy">Numpy<a class="anchor-link" href="#numpy">&#182;</a></h1><p><img src="https://raw.githubusercontent.com/fralfaro/MAT281_2022/main/docs/lectures/data_manipulation/scientific_computing/images/numpy.jpeg" alt="Italian Trulli"></p>
+<h2 id="introduccion">Introducci&#243;n<a class="anchor-link" href="#introduccion">&#182;</a></h2><p><a href="https://numpy.org/">NumPy</a> es el paquete fundamental para la computación científica con Python. Contiene entre otras cosas:</p>
 <ul>
-<li>La ciencia de datos (data science) se denomina al enfoque encargado de extraer información <strong>útil</strong> de los datos.<center>
-<img src="https://raw.githubusercontent.com/fralfaro/CodingDojo-DataScience/main/docs/1-PythonBasics/images/data-science-VD.png" width="500px" align="center" >
-</center></li>
+<li>un poderoso objeto de matriz N-dimensional</li>
+<li>funciones sofisticadas (de transmisión)</li>
+<li>herramientas para integrar código C / C ++ y Fortran</li>
+<li>Álgebra lineal útil, transformada de Fourier y capacidades de números aleatorios</li>
 </ul>
-<blockquote><p><strong>Fuente</strong>: <a href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram">Diagrama de Venn del Data Science</a>.</p>
+<p>Además de sus obvios usos científicos, <em>NumPy</em> también se puede utilizar como un eficiente contenedor multidimensional de datos genéricos. Se pueden definir tipos de datos arbitrarios. Esto permite que NumPy se integre sin problemas y rápidamente con una amplia variedad de bases de datos.</p>
+<blockquote><p><em>NumPy</em> tiene licencia bajo la licencia BSD, lo que permite su reutilización con pocas restricciones.</p>
 </blockquote>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="nuestra-caja-de-herramientas">Nuestra caja de herramientas<a class="anchor-link" href="#nuestra-caja-de-herramientas">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<center>
-<img src="https://raw.githubusercontent.com/fralfaro/CodingDojo-DataScience/main/docs/1-PythonBasics/images/tools.png" width="800px" >
-</center>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="por-que-python">&#191;Por qu&#233; Python?<a class="anchor-link" href="#por-que-python">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="por-que-usar-numpy">&#191; Por qu&#233; usar Numpy ?<a class="anchor-link" href="#por-que-usar-numpy">&#182;</a></h3><p>Las razones por las que debería usar <em>NumPy</em> en lugar de cualquier otro objeto _iterable en Python son:</p>
 <ul>
-<li>Lenguaje sencillo de aprender</li>
-<li>Popularidad</li>
-<li>Gran colección de bibliotecas para Data Science (!)</li>
+<li>NumPy proporciona una estructura de ndarray para almacenar datos numéricos de manera contigua.</li>
+<li>También implementa operaciones matemáticas rápidas en ndarrays, que explotan esta contigüidad.</li>
+<li>Brevedad de la sintaxis para las operaciones de matriz.</li>
 </ul>
 
 </div>
@@ -1983,162 +1547,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<center>
-    <img src="https://raw.githubusercontent.com/fralfaro/CodingDojo-DataScience/main/docs/1-PythonBasics/images/stackoverflow.svg" width="900px" >
-</center>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="por-que-google-colaboratory">&#191;Por qu&#233; Google Colaboratory?<a class="anchor-link" href="#por-que-google-colaboratory">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>Proyecto basado en Jupyter Notebook (sistema ampliamente usado en Data Science)</li>
-<li>Permite escribir y ejecutar código Python en el navegador <ul>
-<li>Sin configuración requerida</li>
-<li>Acceso gratuito a GPU (Graphic Process Unit)</li>
-<li>Facilidad para compartir (en la nube)</li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<center>
-    <img src="https://raw.githubusercontent.com/fralfaro/CodingDojo-DataScience/main/docs/1-PythonBasics/images/colab_note.png" width="900px" >
-</center>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="actividad-0">Actividad 0<a class="anchor-link" href="#actividad-0">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>Siga las instrucciones dadas en la sección "Cómo configurar y crear un Cuaderno computacional" de su plataforma Coding Dojo (<a href="https://login.codingdojo.com/m/502/12396/86589">url</a>)</li>
-<li>Una vez aparezca la primera celda, copie el siguiente código Python:<div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bienvenidos al Bootcamp futuros Data Scientist!&quot;</span><span class="p">)</span>
-</pre></div>
-Una vez copiado, ejecute dicho código presionando el botón de play o con la combinación "Ctrl+Enter" </li>
-<li>Si puede visualizar el mismo resultado que el mostrado en la siguiente imagen, ¡felicidades! ya ha creado su primer Notebook Colaboratory (¡y su primer código Python!)</li>
-</ul>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<center>
-    <img src="https://raw.githubusercontent.com/fralfaro/CodingDojo-DataScience/main/docs/1-PythonBasics/images/actividad0.png" width="2000px" >
-</center>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="herramientas-alternativas-anaconda">Herramientas alternativas: Anaconda<a class="anchor-link" href="#herramientas-alternativas-anaconda">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><img src="https://raw.githubusercontent.com/fralfaro/CodingDojo-DataScience/main/docs/1-PythonBasics/images/anaconda_logo.png" width="300px"></img></p>
-<ul>
-<li>Distribución de software Python enfocado al uso en Data Science y Machine Learning</li>
-<li>Utiliza el manejador de paquetes <strong>conda</strong> para instalación de bibliotecas Python</li>
-<li>Multiplataforma: disponible para Windows, Linux y Mac</li>
-</ul>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="python">Python<a class="anchor-link" href="#python">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><img src="https://raw.githubusercontent.com/fralfaro/CodingDojo-DataScience/main/docs/1-PythonBasics/images/python-logo-inkscape.svg" width="500px"></img></p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="comentarios">Comentarios<a class="anchor-link" href="#comentarios">&#182;</a></h2><ul>
-<li>Son segmentos de código ignorados por el intérprete</li>
-<li>Sirven para explicar en código</li>
-<li>Se escriben a la derecha del caracter <code>#</code> </li>
-<li>En archivos .py, también es común utilizar docstrings como comentarios. Estos se escriben entre los símbolos <code>'''</code> tanto como apertura como cierre</li>
-</ul>
+<h2 id="conceptos-basicos">Conceptos b&#225;sicos<a class="anchor-link" href="#conceptos-basicos">&#182;</a></h2><h3 id="manipulacion-de-datos">Manipulaci&#243;n de datos<a class="anchor-link" href="#manipulacion-de-datos">&#182;</a></h3><p>En esta sección se presentan operaciones básicas de los arreglos de numpy.</p>
 
 </div>
 </div>
@@ -2149,7 +1558,7 @@ Una vez copiado, ejecute dicho código presionando el botón de play o con la co
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2164,13 +1573,9 @@ Una vez copiado, ejecute dicho código presionando el botón de play o con la co
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Este es un comentario de una sola línea</span>
-<span class="c1"># Esta es la segunda línea de tu comentario</span>
-<span class="c1"># Todo lo que sigue luego del gato es parte del comentario</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 </pre></div>
-<div id="cell-1" class="clipboard-copy-txt"># Este es un comentario de una sola línea
-# Esta es la segunda línea de tu comentario
-# Todo lo que sigue luego del gato es parte del comentario</div>
+<div id="cell-1" class="clipboard-copy-txt">import numpy as np</div>
     
         </div>
     </div>
@@ -2179,40 +1584,13 @@ Una vez copiado, ejecute dicho código presionando el botón de play o con la co
 </div>
 
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="variables">Variables<a class="anchor-link" href="#variables">&#182;</a></h2><p>Una variable permite <strong>almacenar</strong> un valor asignando a un nombre que podrá ser <strong>utilizado posteriormente</strong> en la aplicación.</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="asignacion-a-variables">Asignaci&#243;n a Variables<a class="anchor-link" href="#asignacion-a-variables">&#182;</a></h3><p>Una asignación de variables tiene la forma:</p>
-<div align="center">
-<div style="font-size:1.5em"> &lt;variable&gt; = &lt;expresion&gt;</div>
-<img src="https://raw.githubusercontent.com/fralfaro/CodingDojo-DataScience/main/docs/1-PythonBasics/images/asignacion_var.jpg" width="15%"/>
-</div>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2227,17 +1605,13 @@ Una vez copiado, ejecute dicho código presionando el botón de play o con la co
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Variables</span>
-<span class="n">x</span><span class="o">=</span><span class="mi">2</span> <span class="c1"># Esta de acá es la variable x y tiene asignada un valor de 2</span>
-<span class="n">y</span><span class="o">=</span><span class="mi">5</span> <span class="c1"># Esta sería la variable y</span>
-<span class="n">z</span><span class="o">=</span><span class="n">x</span><span class="o">+</span><span class="n">y</span> <span class="c1"># Creamos la variable z y le asignamos el resultado de x + y. z = 7</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span> <span class="c1"># Esto muestra por la terminal el valor de las variables x y z</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># vector</span>
+<span class="n">vector</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">vector</span><span class="p">)</span>
 </pre></div>
-<div id="cell-2" class="clipboard-copy-txt"># Variables
-x=2 # Esta de acá es la variable x y tiene asignada un valor de 2
-y=5 # Esta sería la variable y
-z=x+y # Creamos la variable z y le asignamos el resultado de x + y. z = 7
-print(x, y, z) # Esto muestra por la terminal el valor de las variables x y z</div>
+<div id="cell-2" class="clipboard-copy-txt"># vector
+vector = np.array([1,2,3,4,5])
+print(vector)</div>
     
         </div>
     </div>
@@ -2259,7 +1633,7 @@ print(x, y, z) # Esto muestra por la terminal el valor de las variables x y z</d
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>2 5 7
+<pre>[1 2 3 4 5]
 </pre>
 </div>
 </div>
@@ -2269,36 +1643,13 @@ print(x, y, z) # Esto muestra por la terminal el valor de las variables x y z</d
 </div>
 
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="variables-tipos-de-datos">Variables: Tipos de datos<a class="anchor-link" href="#variables-tipos-de-datos">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="numeros-enteros">N&#250;meros enteros<a class="anchor-link" href="#numeros-enteros">&#182;</a></h4><p>Tipo <code>int</code> (integer) que representa un subgrupo finito de numeros enteros matemáticos.</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2313,220 +1664,21 @@ print(x, y, z) # Esto muestra por la terminal el valor de las variables x y z</d
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">a1</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1"># Números enteros. Almacena el entero 10 (integer - int)</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># matriz </span>
+<span class="n">matriz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span> 
+    <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">12</span><span class="p">]</span>
+<span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">matriz</span><span class="p">)</span>
 </pre></div>
-<div id="cell-3" class="clipboard-copy-txt">a1 = 10 # Números enteros. Almacena el entero 10 (integer - int)</div>
-    
-        </div>
-    </div>
-
-</div>
-</div>
-
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="numeros-reales">N&#250;meros Reales<a class="anchor-link" href="#numeros-reales">&#182;</a></h4><p>Tipo <code>float</code> (punto flotante) que representa números en distintas magnitudes en los reales
-(incluyendo sus decimales).</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-        
-        
-        <div class="CodeMirror cm-s-jupyter">
-        <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-4">
-            <div>
-                <span class="notice" hidden>Copied!</span>
-                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
-                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
-                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-                </svg>
-                </div>
-            </clipboard-copy>
-        </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">a2</span> <span class="o">=</span> <span class="mf">15.3</span> <span class="c1"># Números decimales (reales). Almacena el numero flotante 15.3 (flotantes - float)</span>
-</pre></div>
-<div id="cell-4" class="clipboard-copy-txt">a2 = 15.3 # Números decimales (reales). Almacena el numero flotante 15.3 (flotantes - float)</div>
-    
-        </div>
-    </div>
-
-</div>
-</div>
-
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="string">String<a class="anchor-link" href="#string">&#182;</a></h4><p>Tipo <code>str</code> (strings) representando cadenas de caracteres.</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-        
-        
-        <div class="CodeMirror cm-s-jupyter">
-        <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-5">
-            <div>
-                <span class="notice" hidden>Copied!</span>
-                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
-                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
-                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-                </svg>
-                </div>
-            </clipboard-copy>
-        </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">a3</span> <span class="o">=</span> <span class="s2">&quot;Este es un texto creado con comillas dobles&quot;</span> <span class="c1"># Strings. Almacena el texto indicado (strings - str)</span>
-<span class="n">a4</span> <span class="o">=</span> <span class="s1">&#39;Este es un texto creado con comillas simples&#39;</span> <span class="c1"># También es un string</span>
-</pre></div>
-<div id="cell-5" class="clipboard-copy-txt">a3 = "Este es un texto creado con comillas dobles" # Strings. Almacena el texto indicado (strings - str)
-a4 = 'Este es un texto creado con comillas simples' # También es un string</div>
-    
-        </div>
-    </div>
-
-</div>
-</div>
-
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="valores-logicos">Valores L&#243;gicos<a class="anchor-link" href="#valores-logicos">&#182;</a></h4><p>Tipo <code>bool</code> que representa el conjunto de valores de verdad (verdadero o falso)</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-        
-        
-        <div class="CodeMirror cm-s-jupyter">
-        <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-6">
-            <div>
-                <span class="notice" hidden>Copied!</span>
-                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
-                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
-                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-                </svg>
-                </div>
-            </clipboard-copy>
-        </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">a5</span> <span class="o">=</span> <span class="kc">True</span> <span class="c1"># Booleanos (valores de verdadero (True) y falso (False)). Almacena valor True. (booleanos - bool)</span>
-</pre></div>
-<div id="cell-6" class="clipboard-copy-txt">a5 = True # Booleanos (valores de verdadero (True) y falso (False)). Almacena valor True. (booleanos - bool)</div>
-    
-        </div>
-    </div>
-
-</div>
-</div>
-
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="numeros-complejos">N&#250;meros Complejos<a class="anchor-link" href="#numeros-complejos">&#182;</a></h4><p>Tipo <code>complex</code> que representa el universo de números complejos.</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-        
-        
-        <div class="CodeMirror cm-s-jupyter">
-        <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-7">
-            <div>
-                <span class="notice" hidden>Copied!</span>
-                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
-                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
-                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-                </svg>
-                </div>
-            </clipboard-copy>
-        </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">a6</span> <span class="o">=</span> <span class="mf">3.3</span> <span class="o">+</span> <span class="mf">5.1</span><span class="n">j</span> <span class="c1"># Números complejos. Estos tiene una parte real y una parte imaginaria (acompañada de una j). (complejos - complex)</span>
-</pre></div>
-<div id="cell-7" class="clipboard-copy-txt">a6 = 3.3 + 5.1j # Números complejos. Estos tiene una parte real y una parte imaginaria (acompañada de una j). (complejos - complex)</div>
-    
-        </div>
-    </div>
-
-</div>
-</div>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-        
-        
-        <div class="CodeMirror cm-s-jupyter">
-        <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-8">
-            <div>
-                <span class="notice" hidden>Copied!</span>
-                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
-                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
-                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-                </svg>
-                </div>
-            </clipboard-copy>
-        </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="n">a3</span><span class="p">,</span> <span class="n">a4</span><span class="p">,</span> <span class="n">a5</span><span class="p">,</span> <span class="n">a6</span><span class="p">)</span> <span class="c1"># Muestra los datos almacenados en todas las variables por la terminal</span>
-</pre></div>
-<div id="cell-8" class="clipboard-copy-txt">print(a1, a2, a3, a4, a5, a6) # Muestra los datos almacenados en todas las variables por la terminal</div>
+<div id="cell-3" class="clipboard-copy-txt"># matriz 
+matriz = np.array([
+    [1,2,3,4], 
+    [5,6,7,8],
+    [9,10,11,12]
+])
+print(matriz)</div>
     
         </div>
     </div>
@@ -2548,7 +1700,9 @@ a4 = 'Este es un texto creado con comillas simples' # También es un string</div
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>10 15.3 Este es un texto creado con comillas dobles Este es un texto creado con comillas simples True (3.3+5.1j)
+<pre>[[ 1  2  3  4]
+ [ 5  6  7  8]
+ [ 9 10 11 12]]
 </pre>
 </div>
 </div>
@@ -2558,48 +1712,18 @@ a4 = 'Este es un texto creado con comillas simples' # También es un string</div
 </div>
 
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="salida-de-datos-print">Salida de datos: Print<a class="anchor-link" href="#salida-de-datos-print">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Quiero escribir por pantalla:</p>
-
-<pre><code>El valor de la variable a1 es &lt;aquí va el valor de a1&gt; y el valor de a2 es &lt;aquí va el valor de a2&gt;
-
-</code></pre>
-<p>Ej:</p>
-
-<pre><code>El valor de la variable a1 es 10 y el valor de a2 es 15.3</code></pre>
-
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-9">
+            <clipboard-copy for="cell-4">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -2609,9 +1733,11 @@ a4 = 'Este es un texto creado con comillas simples' # También es un string</div
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="s2">&quot;Unir &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">### tipo</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">matriz</span><span class="p">)</span>
 </pre></div>
-<div id="cell-9" class="clipboard-copy-txt">"Unir " + str(10)</div>
+<div id="cell-4" class="clipboard-copy-txt">### tipo
+type(matriz)</div>
     
         </div>
     </div>
@@ -2629,15 +1755,314 @@ a4 = 'Este es un texto creado con comillas simples' # También es un string</div
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&#39;Unir 10&#39;</pre>
+<pre>numpy.ndarray</pre>
 </div>
 
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-5">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">### Escoger filas y columnas</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;first row: </span><span class="se">\n</span><span class="s2"> </span><span class="si">{</span><span class="n">matriz</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;first col: </span><span class="se">\n</span><span class="s2"> </span><span class="si">{</span><span class="n">matriz</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;first and second rows: </span><span class="se">\n</span><span class="s2"> </span><span class="si">{</span><span class="n">matriz</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;first and second cols: </span><span class="se">\n</span><span class="s2"> </span><span class="si">{</span><span class="n">matriz</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+<div id="cell-5" class="clipboard-copy-txt">### Escoger filas y columnas
+print(f"first row: \n {matriz[0]} \n")
+print(f"first col: \n {matriz[:,0]} \n")
+print(f"first and second rows: \n {matriz[:2]} \n")
+print(f"first and second cols: \n {matriz[:,:2]} \n")</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>first row: 
+ [1 2 3 4] 
+
+first col: 
+ [1 5 9] 
+
+first and second rows: 
+ [[1 2 3 4]
+ [5 6 7 8]] 
+
+first and second cols: 
+ [[ 1  2]
+ [ 5  6]
+ [ 9 10]] 
+
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="operaciones-basicas">Operaciones B&#225;sicas<a class="anchor-link" href="#operaciones-basicas">&#182;</a></h3><p>Operaciones matemáticas básicas de matrices
+La mayoría de las operaciones realizadas en NumPy se manejan por elementos, es decir, calcular $C = A + B$ se traducirá en $ C [i, j] = A [i, j] + B [i, j] $.</p>
+<p>A continuación hay una lista con las operaciones matemáticas más comunes.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-6">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># crear dos arreglos</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">]</span>
+<span class="p">])</span>
+
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">9</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">7</span><span class="p">],[</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Matrix A: </span><span class="se">\n</span><span class="s2"> </span><span class="si">{</span><span class="n">A</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Matrix B: </span><span class="se">\n</span><span class="s2"> </span><span class="si">{</span><span class="n">B</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+<div id="cell-6" class="clipboard-copy-txt"># crear dos arreglos
+A = np.array([
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+])
+
+B = np.array([[9,8,7],[6,5,4],[3,2,1]])
+
+print(f"Matrix A: \n {A} \n")
+print(f"Matrix B: \n {B}")</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Matrix A: 
+ [[1 2 3]
+ [4 5 6]
+ [7 8 9]] 
+
+Matrix B: 
+ [[9 8 7]
+ [6 5 4]
+ [3 2 1]]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-7">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># suma</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sum:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">A</span><span class="o">+</span><span class="n">B</span> <span class="p">)</span>
+</pre></div>
+<div id="cell-7" class="clipboard-copy-txt"># suma
+print("Sum:")
+print( A+B )</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Sum:
+[[10 10 10]
+ [10 10 10]
+ [10 10 10]]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-8">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># resta</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Subtraction&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">A</span><span class="o">-</span><span class="n">B</span> <span class="p">)</span>
+</pre></div>
+<div id="cell-8" class="clipboard-copy-txt"># resta
+print("\nSubtraction")
+print( A-B )</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>
+Subtraction
+[[-8 -6 -4]
+ [-2  0  2]
+ [ 4  6  8]]
+</pre>
+</div>
 </div>
 
 </div>
@@ -2656,7 +2081,7 @@ a4 = 'Este es un texto creado con comillas simples' # También es un string</div
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-10">
+            <clipboard-copy for="cell-9">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -2666,15 +2091,13 @@ a4 = 'Este es un texto creado con comillas simples' # También es un string</div
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El valor de la variable a1 es&quot;</span><span class="p">,</span> <span class="n">a1</span><span class="p">,</span> <span class="s2">&quot;y el valor de la variable a2 es&quot;</span><span class="p">,</span> <span class="n">a2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El valor de la variable a1 es &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">a1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; y el valor de la variable a2 es &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">a2</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El valor de la variable a1 es </span><span class="si">%d</span><span class="s2"> y el valor de la variable a2 es </span><span class="si">%f</span><span class="s2"> &quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;El valor de la variable a1 es </span><span class="si">{</span><span class="n">a1</span><span class="si">}</span><span class="s2"> y el valor de la variable a2 es </span><span class="si">{</span><span class="n">a2</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># producto uno a uno</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Product&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">A</span><span class="o">*</span><span class="n">B</span> <span class="p">)</span>
 </pre></div>
-<div id="cell-10" class="clipboard-copy-txt">print("El valor de la variable a1 es", a1, "y el valor de la variable a2 es", a2)
-print("El valor de la variable a1 es " + str(a1) + " y el valor de la variable a2 es " + str(a2))
-print("El valor de la variable a1 es %d y el valor de la variable a2 es %f " % (a1, a2))
-print(f"El valor de la variable a1 es {a1} y el valor de la variable a2 es {a2}")</div>
+<div id="cell-9" class="clipboard-copy-txt"># producto uno a uno
+print("\nProduct")
+print( A*B )</div>
     
         </div>
     </div>
@@ -2696,10 +2119,11 @@ print(f"El valor de la variable a1 es {a1} y el valor de la variable a2 es {a2}"
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>El valor de la variable a1 es 10 y el valor de la variable a2 es 15.3
-El valor de la variable a1 es 10 y el valor de la variable a2 es 15.3
-El valor de la variable a1 es 10 y el valor de la variable a2 es 15.300000 
-El valor de la variable a1 es 10 y el valor de la variable a2 es 15.3
+<pre>
+Product
+[[ 9 16 21]
+ [24 25 24]
+ [21 16  9]]
 </pre>
 </div>
 </div>
@@ -2709,31 +2133,6 @@ El valor de la variable a1 es 10 y el valor de la variable a2 es 15.3
 </div>
 
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="entrada-de-datos-input">Entrada de datos: Input<a class="anchor-link" href="#entrada-de-datos-input">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>Permite al usuario el ingreso de datos por consola</li>
-</ul>
-
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
@@ -2741,6 +2140,69 @@ El valor de la variable a1 es 10 y el valor de la variable a2 es 15.3
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-10">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># producto matricial</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Matricial Product&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">)</span> <span class="p">)</span>
+</pre></div>
+<div id="cell-10" class="clipboard-copy-txt"># producto matricial
+print("\nMatricial Product")
+print( np.dot(A,B) )</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>
+Matricial Product
+[[ 30  24  18]
+ [ 84  69  54]
+ [138 114  90]]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2755,11 +2217,13 @@ El valor de la variable a1 es 10 y el valor de la variable a2 es 15.3
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese su nombre&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Su nombre es&quot;</span><span class="p">,</span> <span class="n">nombre</span><span class="p">)</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># potencia</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2"> Power&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">A</span><span class="o">**</span><span class="mi">2</span> <span class="p">)</span>
 </pre></div>
-<div id="cell-11" class="clipboard-copy-txt">nombre = input("Ingrese su nombre")
-print("Su nombre es", nombre)</div>
+<div id="cell-11" class="clipboard-copy-txt"># potencia
+print("\n Power")
+print( A**2 )</div>
     
         </div>
     </div>
@@ -2781,8 +2245,11 @@ print("Su nombre es", nombre)</div>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Ingrese su nombrefrancisco
-Su nombre es francisco
+<pre>
+ Power
+[[ 1  4  9]
+ [16 25 36]
+ [49 64 81]]
 </pre>
 </div>
 </div>
@@ -2791,32 +2258,6 @@ Su nombre es francisco
 
 </div>
 
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="tipos-de-datos-compuestos-listas">Tipos de datos compuestos: Listas<a class="anchor-link" href="#tipos-de-datos-compuestos-listas">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>Permite el almacenamiento de datos agrupados</li>
-<li>Es un tipo de dato <strong>mutable</strong></li>
-</ul>
-
-</div>
-</div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -2839,19 +2280,25 @@ Su nombre es francisco
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">lista1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span> <span class="c1"># Es una lista cuyos elementos son todos enteros</span>
-<span class="n">lista2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">9.5</span><span class="p">,</span> <span class="s2">&quot;Texto&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mf">4.5</span><span class="p">,</span> <span class="s2">&quot;prueba&quot;</span><span class="p">]]</span>
-<span class="c1"># Para acceder a los elementos de una lista, debes utilizar un índice. Ojo: Este parte en 0</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">lista1</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># Con el índice 1 estamos accediendo al segundo elemento (porque los índices parten en 0)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">lista2</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">lista1</span><span class="p">)</span> <span class="c1"># Esto muestra todos los elementos de la lista1</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># algunas funciones comunes </span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2"> np.exp()&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2"> np.sin()&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2"> np.cos()&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">A</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2"> np.tan()&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="p">)</span>
 </pre></div>
-<div id="cell-12" class="clipboard-copy-txt">lista1 = [1, 2, 3] # Es una lista cuyos elementos son todos enteros
-lista2 = [1, 9.5, "Texto", [1,4.5, "prueba"]]
-# Para acceder a los elementos de una lista, debes utilizar un índice. Ojo: Este parte en 0
-print(lista1[1]) # Con el índice 1 estamos accediendo al segundo elemento (porque los índices parten en 0)
-print(lista2[3])
-print(lista1) # Esto muestra todos los elementos de la lista1</div>
+<div id="cell-12" class="clipboard-copy-txt"># algunas funciones comunes 
+print("\n np.exp()")
+print( np.exp(A) )
+print("\n np.sin()")
+print( np.sin(A) )
+print("\n np.cos()")
+print( np.cos(A))
+print("\n np.tan()")
+print( np.tan(A) )</div>
     
         </div>
     </div>
@@ -2873,9 +2320,26 @@ print(lista1) # Esto muestra todos los elementos de la lista1</div>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>2
-[1, 4.5, &#39;prueba&#39;]
-[1, 2, 3]
+<pre>
+ np.exp()
+[[2.71828183e+00 7.38905610e+00 2.00855369e+01]
+ [5.45981500e+01 1.48413159e+02 4.03428793e+02]
+ [1.09663316e+03 2.98095799e+03 8.10308393e+03]]
+
+ np.sin()
+[[ 0.84147098  0.90929743  0.14112001]
+ [-0.7568025  -0.95892427 -0.2794155 ]
+ [ 0.6569866   0.98935825  0.41211849]]
+
+ np.cos()
+[[ 0.54030231 -0.41614684 -0.9899925 ]
+ [-0.65364362  0.28366219  0.96017029]
+ [ 0.75390225 -0.14550003 -0.91113026]]
+
+ np.tan()
+[[ 1.55740772 -2.18503986 -0.14254654]
+ [ 1.15782128 -3.38051501 -0.29100619]
+ [ 0.87144798 -6.79971146 -0.45231566]]
 </pre>
 </div>
 </div>
@@ -2892,151 +2356,8 @@ print(lista1) # Esto muestra todos los elementos de la lista1</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="operaciones">Operaciones<a class="anchor-link" href="#operaciones">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-        
-        
-        <div class="CodeMirror cm-s-jupyter">
-        <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-13">
-            <div>
-                <span class="notice" hidden>Copied!</span>
-                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
-                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
-                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-                </svg>
-                </div>
-            </clipboard-copy>
-        </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Cómo podemos modificar un elemento de mi lista?</span>
-<span class="c1"># Ejemplo, quiero modificar el primer elemento en lista1 para que, en vez de ser 1, sea &quot;Primer elemento&quot;</span>
-<span class="n">lista1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Primer elemento&quot;</span> <span class="c1"># Esto va a reemplazar el valor almacenado en lista1[0] por &quot;Primer elemento&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">lista1</span><span class="p">)</span>
-<span class="c1"># Cómo accedo a los elementos de la lista interna a lista 2?</span>
-<span class="c1"># Ej, quiero acceder al tercer elemento -&gt; &quot;prueba&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">lista2</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">])</span>
-<span class="c1"># Agregar elementos a una lista</span>
-<span class="n">lista1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">lista1</span><span class="p">)</span>
-<span class="c1"># También podemos agregar elementos con insert</span>
-<span class="n">lista1</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;Nuevo elemento&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">lista1</span><span class="p">)</span>
-<span class="c1"># Queremos ahora quitar ese elemento que agregamos</span>
-<span class="n">lista_removed</span> <span class="o">=</span> <span class="n">lista1</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">lista_removed</span><span class="p">,</span> <span class="n">lista1</span><span class="p">)</span>
-<span class="c1"># Puedo acceder a más de un elemento a la vez de mi lista?</span>
-<span class="c1"># &lt;principio&gt;:&lt;fin/muralla&gt;:&lt;salto&gt;</span>
-<span class="n">lista3</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">lista3</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">6</span><span class="p">:</span><span class="mi">1</span><span class="p">])</span>
-<span class="c1"># Quiero mostrar el último elemento</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">lista3</span><span class="p">[::])</span> <span class="c1"># Parto en el primer elemento, hasta el último elemento y avanazo de 1 en 1</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">lista3</span><span class="p">[:</span><span class="mi">2</span><span class="p">],</span><span class="n">lista3</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">:])</span>
-<span class="c1"># Cómo sabemos cuál es el largo de una lista?</span>
-<span class="c1"># Se utiliza la funcion len()</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lista3</span><span class="p">))</span> <span class="c1"># Te indica el largo de la lista</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">lista3</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lista3</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">)])</span> <span class="c1"># El elemento del medio es</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">lista3</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">lista3</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span><span class="p">])</span> <span class="c1"># El elemento del medio es</span>
-</pre></div>
-<div id="cell-13" class="clipboard-copy-txt"># Cómo podemos modificar un elemento de mi lista?
-# Ejemplo, quiero modificar el primer elemento en lista1 para que, en vez de ser 1, sea "Primer elemento"
-lista1[0] = "Primer elemento" # Esto va a reemplazar el valor almacenado en lista1[0] por "Primer elemento"
-print(lista1)
-# Cómo accedo a los elementos de la lista interna a lista 2?
-# Ej, quiero acceder al tercer elemento -> "prueba"
-print(lista2[3][2])
-# Agregar elementos a una lista
-lista1.append(20)
-print(lista1)
-# También podemos agregar elementos con insert
-lista1.insert(2, "Nuevo elemento")
-print(lista1)
-# Queremos ahora quitar ese elemento que agregamos
-lista_removed = lista1.pop(0)
-print(lista_removed, lista1)
-# Puedo acceder a más de un elemento a la vez de mi lista?
-# <principio>:<fin/muralla>:<salto>
-lista3 = [1,2,3,4,5,6,7,8,9,10,11]
-print(lista3[2:6:1])
-# Quiero mostrar el último elemento
-print(lista3[::]) # Parto en el primer elemento, hasta el último elemento y avanazo de 1 en 1
-print(lista3[:2],lista3[-2:])
-# Cómo sabemos cuál es el largo de una lista?
-# Se utiliza la funcion len()
-print(len(lista3)) # Te indica el largo de la lista
-print(lista3[int(len(lista3)/2)]) # El elemento del medio es
-print(lista3[len(lista3)//2]) # El elemento del medio es</div>
-    
-        </div>
-    </div>
-
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[&#39;Primer elemento&#39;, 2, 3]
-prueba
-[&#39;Primer elemento&#39;, 2, 3, 20]
-[&#39;Primer elemento&#39;, 2, &#39;Nuevo elemento&#39;, 3, 20]
-Primer elemento [2, &#39;Nuevo elemento&#39;, 3, 20]
-[3, 4, 5, 6]
-[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-[1, 2] [10, 11]
-11
-6
-6
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="tipos-de-datos-compuestos-tuplas">Tipos de datos compuestos: Tuplas<a class="anchor-link" href="#tipos-de-datos-compuestos-tuplas">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>Permite el almacenamiento de datos agrupados.</li>
-<li>Parecido a las listas, salvo que es un tipo de dato <strong>inmutable</strong></li>
-</ul>
+<h3 id="broadcasting">Broadcasting<a class="anchor-link" href="#broadcasting">&#182;</a></h3><p>Unas de las ventajas de numpy es que podemos hacer broadcasting, es to significa que numpy permite realizar operaciones binarias con arreglos de distintos tamaños.</p>
+<p><img src="https://raw.githubusercontent.com/fralfaro/MAT281_2022/main/docs/lectures/data_manipulation/scientific_computing/images/broad.png" alt="Italian Trulli"></p>
 
 </div>
 </div>
@@ -3052,7 +2373,7 @@ Primer elemento [2, &#39;Nuevo elemento&#39;, 3, 20]
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-14">
+            <clipboard-copy for="cell-13">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3062,11 +2383,13 @@ Primer elemento [2, &#39;Nuevo elemento&#39;, 3, 20]
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">tupla1</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span> <span class="c1"># Esta es una tupla de elementos enteros</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tupla1</span><span class="p">[:</span><span class="mi">3</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># example 01</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">+</span> <span class="mi">5</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;np.arange(3)+ 5:</span><span class="se">\n</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2">&quot;</span> <span class="p">)</span>
 </pre></div>
-<div id="cell-14" class="clipboard-copy-txt">tupla1 = (1, 2, 3, 4) # Esta es una tupla de elementos enteros
-print(tupla1[:3:2])</div>
+<div id="cell-13" class="clipboard-copy-txt"># example 01
+a = np.arange(3)+ 5
+print(f"np.arange(3)+ 5:\n{a}" )</div>
     
         </div>
     </div>
@@ -3088,7 +2411,8 @@ print(tupla1[:3:2])</div>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>(1, 3)
+<pre>np.arange(3)+ 5:
+[5 6 7]
 </pre>
 </div>
 </div>
@@ -3098,17 +2422,6 @@ print(tupla1[:3:2])</div>
 </div>
 
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="operaciones">Operaciones<a class="anchor-link" href="#operaciones">&#182;</a></h3>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
@@ -3116,6 +2429,68 @@ print(tupla1[:3:2])</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-14">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># example 02</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span><span class="o">+</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;np.ones((3,3))+np.arange(3):</span><span class="se">\n</span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span> <span class="p">)</span>
+</pre></div>
+<div id="cell-14" class="clipboard-copy-txt"># example 02
+b = np.ones((3,3))+np.arange(3)
+print(f"np.ones((3,3))+np.arange(3):\n{b}" )</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>np.ones((3,3))+np.arange(3):
+[[1. 2. 3.]
+ [1. 2. 3.]
+ [1. 2. 3.]]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -3130,28 +2505,13 @@ print(tupla1[:3:2])</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># La diferencia entre tuplas y listas es que los elementos de una tupla no se pueden modificar</span>
-<span class="c1"># tupla1[2] = 5 # Esto lanza error</span>
-<span class="n">tupla2</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;hola&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span><span class="c1">#- Permite el almacenamiento de datos agrupados.</span>
-<span class="c1"># Parecido a las listas, salvo que es un tipo de dato **inmutable**</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tupla2</span><span class="p">)</span>
-<span class="n">tupla2</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tupla2</span><span class="p">)</span>
-<span class="c1">#tupla2[2] = &quot;Este es un texto&quot; # Esto va a lanzar error</span>
-<span class="n">tupla3</span> <span class="o">=</span> <span class="n">tupla2</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tupla3</span><span class="p">)</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># example 03</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span> <span class="o">+</span>  <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;np.arange(3).reshape((3,1)) +  np.arange(3):</span><span class="se">\n</span><span class="si">{</span><span class="n">c</span> <span class="si">}</span><span class="s2">&quot;</span> <span class="p">)</span>
 </pre></div>
-<div id="cell-15" class="clipboard-copy-txt"># La diferencia entre tuplas y listas es que los elementos de una tupla no se pueden modificar
-# tupla1[2] = 5 # Esto lanza error
-tupla2 = (1, "hola", [1,2,3])#- Permite el almacenamiento de datos agrupados.
-# Parecido a las listas, salvo que es un tipo de dato **inmutable**
-print(tupla2)
-tupla2[2][1] = 10
-print(tupla2)
-#tupla2[2] = "Este es un texto" # Esto va a lanzar error
-tupla3 = tupla2[:2]
-print(tupla3)
-</div>
+<div id="cell-15" class="clipboard-copy-txt"># example 03
+c = np.arange(3).reshape((3,1)) +  np.arange(3)
+print(f"np.arange(3).reshape((3,1)) +  np.arange(3):\n{c }" )</div>
     
         </div>
     </div>
@@ -3173,9 +2533,10 @@ print(tupla3)
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>(1, &#39;hola&#39;, [1, 2, 3])
-(1, &#39;hola&#39;, [1, 10, 3])
-(1, &#39;hola&#39;)
+<pre>np.arange(3).reshape((3,1)) +  np.arange(3):
+[[0 1 2]
+ [1 2 3]
+ [2 3 4]]
 </pre>
 </div>
 </div>
@@ -3192,74 +2553,10 @@ print(tupla3)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="tipos-de-datos-compuestos-diccionarios">Tipos de datos compuestos: Diccionarios<a class="anchor-link" href="#tipos-de-datos-compuestos-diccionarios">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>Permite el almacenamiento de datos agrupados.</li>
-<li>A diferencia de las listas o tuplas, este permite el acceso a sus elementos a través de <strong>llaves</strong>.</li>
-<li>Los elementos almacenados son <strong>mutables</strong>, sin embargo, las llaves son elementos <strong>inmutables</strong>.</li>
-</ul>
+<h2 id="ejemplo">Ejemplo<a class="anchor-link" href="#ejemplo">&#182;</a></h2><p><strong>Lista de precios:</strong></p>
+<p>El precio de venta de 3 artículos en la venta de pasteles es: 2 dolares por un brownie,  1 dolar por una galleta y 10 dolares por un pastel.</p>
+<p>Asignen estos valores a una lista denominada price (precio).</p>
 
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-        
-        
-        <div class="CodeMirror cm-s-jupyter">
-        <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-16">
-            <div>
-                <span class="notice" hidden>Copied!</span>
-                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
-                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
-                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-                </svg>
-                </div>
-            </clipboard-copy>
-        </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">dict1</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="mi">0</span><span class="p">:</span> <span class="s2">&quot;Texto para llave 0&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;llave1&quot;</span><span class="p">:</span> <span class="s2">&quot;Texto para la llave llave1&quot;</span><span class="p">,</span>
-    <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">):</span> <span class="s2">&quot;Texto para la llave tupla (1,2,3)&quot;</span>
-<span class="p">}</span>
-</pre></div>
-<div id="cell-16" class="clipboard-copy-txt">dict1 = {
-    0: "Texto para llave 0",
-    "llave1": "Texto para la llave llave1",
-    (1,2,3): "Texto para la llave tupla (1,2,3)"
-}</div>
-    
-        </div>
-    </div>
-
-</div>
-</div>
-
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="operaciones">Operaciones<a class="anchor-link" href="#operaciones">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -3274,7 +2571,7 @@ print(tupla3)
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-17">
+            <clipboard-copy for="cell-16">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3284,41 +2581,11 @@ print(tupla3)
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">dict1</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="mi">0</span><span class="p">:</span> <span class="s2">&quot;Texto para indice 0&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;llave1&quot;</span><span class="p">:</span> <span class="s2">&quot;Texto para la llave llave1&quot;</span><span class="p">,</span>
-    <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">):</span> <span class="s2">&quot;Texto para la llave tupla (1,2,3)&quot;</span>
-<span class="p">}</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">dict1</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="c1"># Estoy mostrando el contenido asociado a la llave 0 dentro de dict1</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">dict1</span><span class="p">[</span><span class="s2">&quot;llave1&quot;</span><span class="p">])</span> <span class="c1"># Estoy mostrando el contenido asociado a la llave &quot;llave1&quot; dentro de dict1</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">dict1</span><span class="p">[(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)])</span> <span class="c1"># Estoy mostrando el contenido asociado a la llave (1,2,3) dentro de dict1</span>
-
-<span class="n">personas</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">&#39;Pedro&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;edad&quot;</span><span class="p">:</span><span class="mi">30</span><span class="p">,</span> <span class="s2">&quot;estatura&quot;</span><span class="p">:</span><span class="mf">1.76</span><span class="p">,</span> <span class="s2">&quot;rut&quot;</span><span class="p">:</span><span class="s1">&#39;11111111-1&#39;</span><span class="p">},</span>
-    <span class="s1">&#39;Juan&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;edad&quot;</span><span class="p">:</span><span class="mi">28</span><span class="p">,</span> <span class="s2">&quot;estatura&quot;</span><span class="p">:</span><span class="mf">1.92</span><span class="p">,</span> <span class="s2">&quot;rut&quot;</span><span class="p">:</span><span class="s1">&#39;22222222-2&#39;</span><span class="p">},</span>
-    <span class="s1">&#39;Maria&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">41</span><span class="p">,</span> <span class="mf">1.68</span><span class="p">,</span> <span class="s1">&#39;33333333-3&#39;</span><span class="p">]</span>
-<span class="p">}</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">personas</span><span class="p">[</span><span class="s1">&#39;Pedro&#39;</span><span class="p">][</span><span class="s1">&#39;estatura&#39;</span><span class="p">])</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">price</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">price</span><span class="p">)</span>
 </pre></div>
-<div id="cell-17" class="clipboard-copy-txt">
-dict1 = {
-    0: "Texto para indice 0",
-    "llave1": "Texto para la llave llave1",
-    (1,2,3): "Texto para la llave tupla (1,2,3)"
-}
-
-print(dict1[0]) # Estoy mostrando el contenido asociado a la llave 0 dentro de dict1
-print(dict1["llave1"]) # Estoy mostrando el contenido asociado a la llave "llave1" dentro de dict1
-print(dict1[(1,2,3)]) # Estoy mostrando el contenido asociado a la llave (1,2,3) dentro de dict1
-
-personas = {
-    'Pedro': {"edad":30, "estatura":1.76, "rut":'11111111-1'},
-    'Juan': {"edad":28, "estatura":1.92, "rut":'22222222-2'},
-    'Maria': [41, 1.68, '33333333-3']
-}
-print(personas['Pedro']['estatura'])
-</div>
+<div id="cell-16" class="clipboard-copy-txt">price = [2, 1, 10]
+type(price)</div>
     
         </div>
     </div>
@@ -3336,102 +2603,15 @@ print(personas['Pedro']['estatura'])
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Texto para indice 0
-Texto para la llave llave1
-Texto para la llave tupla (1,2,3)
-1.76
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="tipos-de-datos-compuestos-range">Tipos de datos compuestos: Range<a class="anchor-link" href="#tipos-de-datos-compuestos-range">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>Permite el almacenamiento de rangos de números enteros.</li>
-</ul>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-        
-        
-        <div class="CodeMirror cm-s-jupyter">
-        <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-18">
-            <div>
-                <span class="notice" hidden>Copied!</span>
-                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
-                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
-                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-                </svg>
-                </div>
-            </clipboard-copy>
-        </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">range1</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">range1</span><span class="p">)</span> <span class="c1"># Esto muestra el rango de números del 0 al 11 (sin incluir el 11) en notación compacta</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">range1</span><span class="p">))</span> <span class="c1"># Podemos ver el rango de números en formato lista transformándo los datos</span>
-</pre></div>
-<div id="cell-18" class="clipboard-copy-txt">range1 = range(0, 11,1)
-print(range1) # Esto muestra el rango de números del 0 al 11 (sin incluir el 11) en notación compacta
-print(list(range1)) # Podemos ver el rango de números en formato lista transformándo los datos
-</div>
-    
-        </div>
-    </div>
-
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
 
 
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>range(0, 11)
-[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-</pre>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>list</pre>
 </div>
+
 </div>
 
 </div>
@@ -3446,20 +2626,9 @@ print(list(range1)) # Podemos ver el rango de números en formato lista transfor
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="determinando-un-tipo-de-dato-type">Determinando un tipo de dato: type()<a class="anchor-link" href="#determinando-un-tipo-de-dato-type">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>Se puede determinar el tipo de dato de una variable/dato utilizando la función type()</li>
-</ul>
+<p><strong>Lista de cantidad:</strong></p>
+<p>El club vende 17 brownies, 40 galletas y un pastel.</p>
+<p>Asignen estos valores a una lista denominada quantity_sold (cantidades vendidas).</p>
 
 </div>
 </div>
@@ -3475,7 +2644,7 @@ print(list(range1)) # Podemos ver el rango de números en formato lista transfor
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-19">
+            <clipboard-copy for="cell-17">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3485,27 +2654,11 @@ print(list(range1)) # Podemos ver el rango de números en formato lista transfor
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">a1</span> <span class="o">=</span> <span class="mi">53</span> <span class="c1"># Esta variable es de tipo entero porque se le asigno un entero (53)</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a1</span><span class="p">))</span> <span class="c1"># type() Retorna cual es el tipo de dato asociado con la variable a1 para este ejemplo</span>
-<span class="n">a1</span> <span class="o">=</span> <span class="mf">13.1</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a1</span><span class="p">))</span>
-
-<span class="c1"># Utilización en condicionales (se explicará el if más adelante)</span>
-<span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">a1</span><span class="p">)</span> <span class="o">==</span> <span class="nb">float</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mi variable a1 es flotante&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No es flotante&quot;</span><span class="p">)</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">quantity_sold</span> <span class="o">=</span> <span class="p">[</span><span class="mi">17</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">quantity_sold</span><span class="p">)</span>
 </pre></div>
-<div id="cell-19" class="clipboard-copy-txt">a1 = 53 # Esta variable es de tipo entero porque se le asigno un entero (53)
-print(type(a1)) # type() Retorna cual es el tipo de dato asociado con la variable a1 para este ejemplo
-a1 = 13.1
-print(type(a1))
-
-# Utilización en condicionales (se explicará el if más adelante)
-if type(a1) == float:
-    print("Mi variable a1 es flotante")
-else:
-    print("No es flotante")</div>
+<div id="cell-17" class="clipboard-copy-txt">quantity_sold = [17, 40, 1]
+type(quantity_sold)</div>
     
         </div>
     </div>
@@ -3523,15 +2676,15 @@ else:
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>&lt;class &#39;int&#39;&gt;
-&lt;class &#39;float&#39;&gt;
-Mi variable a1 es flotante
-</pre>
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>list</pre>
 </div>
+
 </div>
 
 </div>
@@ -3546,62 +2699,8 @@ Mi variable a1 es flotante
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="estructuras-de-control">Estructuras de Control<a class="anchor-link" href="#estructuras-de-control">&#182;</a></h2><ul>
-<li>En Python la ejecución es tı́picamente secuencial, implı́citamente definida por el orden de definición de sentencias. Para alterar esta secuencia, normalmente existen dos tipos de sentencias de control:<ul>
-<li>Selección Condicional: múltiples alternativas de ejecución, controladas por una condición.</li>
-<li>Selección Iterativa o Cíclica: Ejecución repetitiva de un grupo de sentencias, también controladas por una condición.</li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="estructura-condicional-if">Estructura Condicional: <code>if</code><a class="anchor-link" href="#estructura-condicional-if">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>La instrucción <code>if</code> depende de un conjunto de condiciones, que son evaluadas en orden. La primera que sea verdadera determina qué instrucciones son ejecutadas.</li>
-<li>Presenta las variantes: <code>if</code>, <code>if-else</code>, <code>if-elif</code> y <code>if-elif-else</code></li>
-</ul>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Sintaxis:</strong></p>
-<div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">&lt;</span><span class="n">cond1</span><span class="o">&gt;</span><span class="p">:</span> <span class="c1">#obligatoria</span>
-    <span class="n">sentencias</span> <span class="n">a</span> <span class="n">ejecutar</span> <span class="n">si</span> <span class="o">&lt;</span><span class="n">cond1</span><span class="o">&gt;</span> <span class="n">es</span> <span class="n">verdadera</span>
-<span class="k">elif</span> <span class="o">&lt;</span><span class="n">cond2</span><span class="o">&gt;</span><span class="p">:</span> <span class="c1">#opcional</span>
-    <span class="n">sentencias</span> <span class="n">a</span> <span class="n">ejecutar</span> <span class="n">si</span> <span class="o">&lt;</span><span class="n">cond2</span><span class="o">&gt;</span> <span class="n">es</span> <span class="n">verdadera</span>
-<span class="k">elif</span> <span class="o">&lt;</span><span class="n">cond3</span><span class="o">&gt;</span><span class="p">:</span> <span class="c1">#opcional</span>
-    <span class="n">sentencias</span> <span class="n">a</span> <span class="n">ejecutar</span> <span class="n">si</span> <span class="o">&lt;</span><span class="n">cond3</span><span class="o">&gt;</span> <span class="n">es</span> <span class="n">verdadera</span>
-<span class="o">...</span>
-<span class="k">else</span><span class="p">:</span> <span class="c1">#opcional</span>
-    <span class="n">sentencias</span> <span class="n">cuando</span> <span class="n">ninguna</span> <span class="n">condicion</span> <span class="n">anterior</span> <span class="n">es</span> <span class="n">verdadera</span>
-</pre></div>
-<p>La <strong><em>Indentación</em></strong> después de cada instrucción indica qué cosas se realizarán si se cumple su respectiva condición (consecuentemente, si <strong>no</strong> se cumplen las condiciones anteriores). Se utiliza el <strong>caracter de tabulación</strong> (TAB, Tab, ↹).</p>
+<p><strong>No podemos realizar cálculos entre las listas</strong></p>
+<p>Ahora debemos encontrar el dinero recaudado para cada tipo de elemento.  Queremos el precio * cantidad para cada elemento.  Tratemos de multiplicar nuestras listas:</p>
 
 </div>
 </div>
@@ -3617,7 +2716,7 @@ Mi variable a1 es flotante
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-20">
+            <clipboard-copy for="cell-18">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3627,33 +2726,9 @@ Mi variable a1 es flotante
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">18</span>
-
-<span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El valor de x es menor que 4&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Esta linea si se encuentra en el if&quot;</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">x</span><span class="o">&gt;</span><span class="mi">1</span> <span class="ow">or</span> <span class="n">x</span><span class="o">&lt;</span><span class="mi">15</span><span class="p">:</span> <span class="c1"># elif es un else acompañado de un if abreviado</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El valor de x es&quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">20</span><span class="p">:</span> <span class="c1"># Si no se cumplió la condición anterior, pregunto por esta nueva condición</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El valor de x es menor que 20&quot;</span><span class="p">)</span> 
-<span class="k">else</span><span class="p">:</span> 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El valor de x no cumple ninguna de las condiciones&quot;</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Término de la sentencia if&quot;</span><span class="p">)</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">price</span> <span class="o">*</span> <span class="n">quantity_sold</span>
 </pre></div>
-<div id="cell-20" class="clipboard-copy-txt">x = 18
-
-if x < 4:
-    print("El valor de x es menor que 4")
-    print("Esta linea si se encuentra en el if")
-elif x>1 or x<15: # elif es un else acompañado de un if abreviado
-    print("El valor de x es", x)
-elif x < 20: # Si no se cumplió la condición anterior, pregunto por esta nueva condición
-    print("El valor de x es menor que 20") 
-else: 
-    print("El valor de x no cumple ninguna de las condiciones")
-
-print("Término de la sentencia if")</div>
+<div id="cell-18" class="clipboard-copy-txt">price * quantity_sold</div>
     
         </div>
     </div>
@@ -3674,10 +2749,14 @@ print("Término de la sentencia if")</div>
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>El valor de x es 18
-Término de la sentencia if
-</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">TypeError</span>                                 Traceback (most recent call last)
+Input <span class="ansi-green-intense-fg ansi-bold">In [20]</span>, in <span class="ansi-cyan-fg">&lt;cell line: 1&gt;</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span> <span class="ansi-yellow-bg">price</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">quantity_sold</span>
+
+<span class="ansi-red-intense-fg ansi-bold">TypeError</span>: can&#39;t multiply sequence by non-int of type &#39;list&#39;</pre>
 </div>
 </div>
 
@@ -3693,40 +2772,8 @@ Término de la sentencia if
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="estructura-de-control-for">Estructura de Control: <code>for</code><a class="anchor-link" href="#estructura-de-control-for">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>Repite sentencias, i.e., itera; una cantidad <strong>fija</strong> de veces.</li>
-<li>Funciona sobre tipos de datos <strong>iterables</strong>, vale decir, <strong>secuencias</strong>.</li>
-</ul>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Sintáxis</strong></p>
-<div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">variable</span> <span class="ow">in</span> <span class="n">secuencia</span><span class="p">:</span>
-    <span class="c1">#instrucciones</span>
-</pre></div>
-<ul>
-<li>Cada vez que se utiliza un ciclo for, se define una variable que va a tomar cada uno de los valores de <code>secuencia</code>.</li>
-<li><code>secuencia</code> debe ser un tipo de dato <strong>iterable</strong>.</li>
-</ul>
+<p><strong>Convertir una lista a un array de NumPy</strong></p>
+<p>Puesto que ya creamos listas para el precio y cantidad, podemos convertir estos a arrays usando el siguiente código:</p>
 
 </div>
 </div>
@@ -3737,7 +2784,151 @@ Término de la sentencia if
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-19">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">price_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">price</span><span class="p">)</span>
+<span class="n">quantity_sold_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">quantity_sold</span><span class="p">)</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">price_array</span><span class="p">)</span>
+</pre></div>
+<div id="cell-19" class="clipboard-copy-txt">price_array = np.array(price)
+quantity_sold_array = np.array(quantity_sold)
+type(price_array)</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>numpy.ndarray</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>Podemos realizar cálculos con arrays</strong></p>
+<p>Ahora regresemos a nuestro problema original: encontrar el dinero recaudado para cada tipo de elemento.  Queremos el <strong>precio * cantidad</strong> para cada elemento. Tratemos de multiplicar nuestros arrays.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-20">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">price_array</span> <span class="o">*</span> <span class="n">quantity_sold_array</span>
+</pre></div>
+<div id="cell-20" class="clipboard-copy-txt">price_array * quantity_sold_array</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>array([34, 40, 10])</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>Cálculos por elementos</strong></p>
+<p>Creen un array de NumPy que corresponda al costo de fabricación de cada uno de los artículos vendidos en la venta de pasteles.  Digamos que cuesta 0.25 dolares para hacer un brownie, una galleta,  0.50 dolares y un pastel, 5.00 dolares.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -3752,26 +2943,9 @@ Término de la sentencia if
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">lista5</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
-
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">lista5</span><span class="p">:</span> <span class="c1"># Por cada elemento i pertenciente a la lista5, hago algo</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Estoy iterando&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-
-<span class="c1"># Otra forma de usar el for</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">lista5</span><span class="p">)):</span> <span class="c1"># range es parecido a las listas, pero enfocado en números (enteros)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;El valor del elemento </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2"> en lista5 es&quot;</span><span class="p">,</span> <span class="n">lista5</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">cost_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.50</span><span class="p">,</span> <span class="mf">5.00</span><span class="p">])</span>
 </pre></div>
-<div id="cell-21" class="clipboard-copy-txt">lista5 = [4,2,8,6,3,4]
-
-for i in lista5: # Por cada elemento i pertenciente a la lista5, hago algo
-    print("Estoy iterando")
-    print(i)
-
-# Otra forma de usar el for
-for i in range(0,len(lista5)): # range es parecido a las listas, pero enfocado en números (enteros)
-    print(f"El valor del elemento {i} en lista5 es", lista5[i])
-</div>
+<div id="cell-21" class="clipboard-copy-txt">cost_array = np.array([0.25, 0.50, 5.00])</div>
     
         </div>
     </div>
@@ -3779,46 +2953,18 @@ for i in range(0,len(lista5)): # range es parecido a las listas, pero enfocado e
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Estoy iterando
-4
-Estoy iterando
-2
-Estoy iterando
-8
-Estoy iterando
-6
-Estoy iterando
-3
-Estoy iterando
-4
-El valor del elemento 0 en lista5 es 4
-El valor del elemento 1 en lista5 es 2
-El valor del elemento 2 en lista5 es 8
-El valor del elemento 3 en lista5 es 6
-El valor del elemento 4 en lista5 es 3
-El valor del elemento 5 en lista5 es 4
-</pre>
 </div>
 </div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Para encontrar la ganancia de cada artículo, queremos restar el costo del precio. Una matriz NumPy realizará la resta por elementos como se muestra:</p>
 
 </div>
-
 </div>
-
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -3826,7 +2972,7 @@ El valor del elemento 5 en lista5 es 4
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -3841,17 +2987,11 @@ El valor del elemento 5 en lista5 es 4
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># También es posible usar enumerate para recorrer listas con índice</span>
-<span class="k">for</span> <span class="n">indice</span><span class="p">,</span> <span class="n">valor</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">lista5</span><span class="p">):</span>
-    <span class="c1"># Esto es equivalente en cada iteración a hacer</span>
-    <span class="c1"># indice, valor = (elemento1, elemento2) de la tupla</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;El valor del elemento </span><span class="si">{</span><span class="n">indice</span><span class="si">}</span><span class="s2"> en lista5 es&quot;</span><span class="p">,</span> <span class="n">valor</span><span class="p">)</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">profit_array</span> <span class="o">=</span> <span class="n">price_array</span> <span class="o">-</span> <span class="n">cost_array</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">profit_array</span><span class="p">)</span>
 </pre></div>
-<div id="cell-22" class="clipboard-copy-txt"># También es posible usar enumerate para recorrer listas con índice
-for indice, valor in enumerate(lista5):
-    # Esto es equivalente en cada iteración a hacer
-    # indice, valor = (elemento1, elemento2) de la tupla
-    print(f"El valor del elemento {indice} en lista5 es", valor)</div>
+<div id="cell-22" class="clipboard-copy-txt">profit_array = price_array - cost_array
+print(profit_array)</div>
     
         </div>
     </div>
@@ -3873,12 +3013,7 @@ for indice, valor in enumerate(lista5):
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>El valor del elemento 0 en lista5 es 4
-El valor del elemento 1 en lista5 es 2
-El valor del elemento 2 en lista5 es 8
-El valor del elemento 3 en lista5 es 6
-El valor del elemento 4 en lista5 es 3
-El valor del elemento 5 en lista5 es 4
+<pre>[1.75 0.5  5.  ]
 </pre>
 </div>
 </div>
@@ -3895,22 +3030,8 @@ El valor del elemento 5 en lista5 es 4
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="estructura-de-control-while">Estructura de Control: <code>while</code><a class="anchor-link" href="#estructura-de-control-while">&#182;</a></h3><p>La instrucción <code>while</code> ejecuta una secuencia de instrucciones mientras una condición sea verdadera.</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Sintáxis:</strong></p>
-<div class="highlight"><pre><span></span><span class="k">while</span> <span class="o">&lt;</span><span class="n">condición</span><span class="o">&gt;</span><span class="p">:</span> <span class="c1">#obligatorio</span>
-    <span class="c1"># sentencias mientras la &lt;condición&gt; sea verdadera</span>
-</pre></div>
+<p><strong>Booleanos elementwise</strong></p>
+<p>Supongamos que quieren identificar qué elementos obtuvieron un beneficio superior a 2 dolares por elemento.  Pueden usar el siguiente código para preguntar si la declaración es True (verdadera) o False (falsa) para cada elemento en el array.</p>
 
 </div>
 </div>
@@ -3921,7 +3042,7 @@ El valor del elemento 5 en lista5 es 4
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -3936,19 +3057,82 @@ El valor del elemento 5 en lista5 es 4
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">p</span><span class="o">=</span><span class="mi">0</span>
-
-<span class="k">while</span> <span class="n">p</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El valor de p es&quot;</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span>
-    <span class="n">p</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1"># p = p + 1</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Finalización del while&quot;</span><span class="p">)</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">profit_array</span> <span class="o">&gt;</span> <span class="mf">2.00</span>
 </pre></div>
-<div id="cell-23" class="clipboard-copy-txt">p=0
+<div id="cell-23" class="clipboard-copy-txt">profit_array > 2.00</div>
+    
+        </div>
+    </div>
 
-while p < 10:
-    print("El valor de p es", p)
-    p += 1 # p = p + 1
-print("Finalización del while")</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>array([False, False,  True])</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>Otras Operaciones</strong></p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-24">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># adicion</span>
+<span class="n">price_array2</span> <span class="o">=</span> <span class="n">price_array</span> <span class="o">+</span> <span class="mi">7</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">price_array2</span><span class="p">)</span>
+</pre></div>
+<div id="cell-24" class="clipboard-copy-txt"># adicion
+price_array2 = price_array + 7
+print(price_array2)</div>
     
         </div>
     </div>
@@ -3970,17 +3154,7 @@ print("Finalización del while")</div>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>El valor de p es 0
-El valor de p es 1
-El valor de p es 2
-El valor de p es 3
-El valor de p es 4
-El valor de p es 5
-El valor de p es 6
-El valor de p es 7
-El valor de p es 8
-El valor de p es 9
-Finalización del while
+<pre>[ 9  8 17]
 </pre>
 </div>
 </div>
@@ -3996,12 +3170,12 @@ Finalización del while
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-24">
+            <clipboard-copy for="cell-25">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -4011,35 +3185,13 @@ Finalización del while
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">k</span><span class="o">=</span><span class="mi">1</span>
-<span class="k">while</span> <span class="n">k</span><span class="o">&lt;</span><span class="mi">10</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">k</span><span class="o">%</span><span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="c1"># Todos los números cuyo resto al dividirse por 3 sea cero, son múltiplos de 3</span>
-        <span class="n">k</span><span class="o">+=</span><span class="mi">1</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Encontré un múltiplo de 3&quot;</span><span class="p">)</span>
-        <span class="k">continue</span> <span class="c1"># Palabra reservada que al ejecutarse, se salta a la siguiente iteración de un bloque repetitivo</span>
-
-    <span class="k">if</span> <span class="n">k</span><span class="o">%</span><span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="c1"># Múltiplos de 4</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Encontré un múltiplo de 4&quot;</span><span class="p">)</span>
-        <span class="k">break</span> <span class="c1"># Palabra reservada que al ejecutarse, detiene totalmente el ciclo repetitivo</span>
-    
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El valor de k es:&quot;</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
-    <span class="n">k</span> <span class="o">+=</span><span class="mi">1</span> <span class="c1"># k = k + 1</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Terminé la ejecución del while&quot;</span><span class="p">)</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># agregar elementos</span>
+<span class="n">price_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">price_array</span><span class="p">,</span> <span class="p">[</span><span class="mf">4.50</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">price_array</span><span class="p">)</span>
 </pre></div>
-<div id="cell-24" class="clipboard-copy-txt">k=1
-while k<10:
-    if k%3 == 0: # Todos los números cuyo resto al dividirse por 3 sea cero, son múltiplos de 3
-        k+=1
-        print("Encontré un múltiplo de 3")
-        continue # Palabra reservada que al ejecutarse, se salta a la siguiente iteración de un bloque repetitivo
-
-    if k%4 == 0: # Múltiplos de 4
-        print("Encontré un múltiplo de 4")
-        break # Palabra reservada que al ejecutarse, detiene totalmente el ciclo repetitivo
-    
-    print("El valor de k es:", k)
-    k +=1 # k = k + 1
-print("Terminé la ejecución del while")</div>
+<div id="cell-25" class="clipboard-copy-txt"># agregar elementos
+price_array = np.append(price_array, [4.50, 3, 4, 9])
+print(price_array)</div>
     
         </div>
     </div>
@@ -4061,11 +3213,7 @@ print("Terminé la ejecución del while")</div>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>El valor de k es: 1
-El valor de k es: 2
-Encontré un múltiplo de 3
-Encontré un múltiplo de 4
-Terminé la ejecución del while
+<pre>[ 2.   1.  10.   4.5  3.   4.   9. ]
 </pre>
 </div>
 </div>
@@ -4075,62 +3223,18 @@ Terminé la ejecución del while
 </div>
 
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="actividad-1">Actividad 1<a class="anchor-link" href="#actividad-1">&#182;</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>Escriba un código Python que entregue ciertas caracterı́sticas de un número solicitado. Para
-esto, el programa deberá realizar las siguientes tareas:<ol>
-<li>Solicitar al usuario un número entero positivo perteneciente al rango [2,1000]. Su programa
-debe verificar esta condición. En caso contrario, se debe pedir otro número hasta que se
-cumpla la condición.</li>
-<li>Indicar las siguientes caracterı́sticas del número solicitado:<ul>
-<li>¿Es un número par o impar?</li>
-<li>¿Es un número primo?</li>
-<li>¿Cuál es el conjunto de divisores del número? (Se dice que y es divisor de x si el resultado de x ÷ y es un número entero).</li>
-</ul>
-</li>
-<li>Una vez indicada las caracterı́sticas del número, el programa debe finalizar.</li>
-</ol>
-</li>
-</ul>
-<p>Ejemplo de funcionamiento:</p>
-<div class="highlight"><pre><span></span><span class="go">Ingrese un número: 6</span>
-<span class="go">Número par</span>
-<span class="go">No es un número primo</span>
-<span class="go">Conjunto de divisores: [1, 2, 3, 6]</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-25">
+            <clipboard-copy for="cell-26">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -4140,15 +3244,100 @@ cumpla la condición.</li>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># solucion</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Eliminar</span>
+<span class="n">price_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">price_array</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">price_array</span><span class="p">)</span>
 </pre></div>
-<div id="cell-25" class="clipboard-copy-txt"># solucion
-</div>
+<div id="cell-26" class="clipboard-copy-txt"># Eliminar
+price_array = np.delete(price_array, -1)
+print(price_array)</div>
     
         </div>
     </div>
 
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[ 2.   1.  10.   4.5  3.   4. ]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-27">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># reemplazar</span>
+<span class="n">price_array</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">12</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">price_array</span><span class="p">)</span>
+</pre></div>
+<div id="cell-27" class="clipboard-copy-txt"># reemplazar
+price_array[2] = 12
+print(price_array)</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[ 2.   1.  12.   4.5  3.   4. ]
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -4174,7 +3363,7 @@ cumpla la condición.</li>
     <nav class="md-footer__inner md-grid" aria-label="Pie">
       
         
-        <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Anterior: Home" rel="prev">
+        <a href="../../1-PythonBasics/1-PythonBasics/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Introducción" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -4183,20 +3372,20 @@ cumpla la condición.</li>
               <span class="md-footer__direction">
                 Anterior
               </span>
-              Home
+              Introducción
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../1.5-numpy/1.5-numpy/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Numpy" rel="next">
+        <a href="../../2-Pandas/2-Pandas/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Pandas" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Siguiente
               </span>
-              Numpy
+              Pandas
             </div>
           </div>
           <div class="md-footer__button md-icon">
