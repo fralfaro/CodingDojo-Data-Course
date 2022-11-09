@@ -91,7 +91,8 @@ plugins:
 nav:
     - Home: index.md
     - 1-PythonBasics/1-PythonBasics.ipynb
-    #- 2-Pandas/2-Pandas.ipynb
+    - 1.5-numpy/1.5-numpy.ipynb
+    - 2-Pandas/2-Pandas.ipynb
     #- 3-Matplotlib/3-Matplotlib.ipynb
     #- 4-StatisticalInference/4-StatisticalInference.ipynb
     #- 5-IntroML/5-IntroML.ipynb
