@@ -352,6 +352,26 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#python-lists-vs-numpy-arrays" class="md-nav__link">
+    Python Lists vs. Numpy Arrays
+  </a>
+  
+    <nav class="md-nav" aria-label="Python Lists vs. Numpy Arrays">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#memoria" class="md-nav__link">
+    Memoria
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#ejemplo" class="md-nav__link">
     Ejemplo
   </a>
@@ -452,6 +472,26 @@
           <li class="md-nav__item">
   <a href="#broadcasting" class="md-nav__link">
     Broadcasting
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-lists-vs-numpy-arrays" class="md-nav__link">
+    Python Lists vs. Numpy Arrays
+  </a>
+  
+    <nav class="md-nav" aria-label="Python Lists vs. Numpy Arrays">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#memoria" class="md-nav__link">
+    Memoria
   </a>
   
 </li>
@@ -1558,7 +1598,7 @@ Licensed under the Apache License, Version 2.0.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2553,6 +2593,254 @@ print(f"np.arange(3).reshape((3,1)) +  np.arange(3):\n{c }" )</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="python-lists-vs-numpy-arrays">Python Lists vs. Numpy Arrays<a class="anchor-link" href="#python-lists-vs-numpy-arrays">&#182;</a></h2><p>La librería principal de Python son las listas. Una lista es el equivalente a Python de una matriz, pero es redimensionable y puede contener elementos de diferentes tipos.</p>
+<p>Una pregunta común para principiantes es cuál es la verdadera diferencia aquí. La respuesta es el rendimiento. Las estructuras de datos de Numpy funcionan mejor en:</p>
+<ul>
+<li><strong>Tamaño</strong>: las estructuras de datos de Numpy ocupan menos espacio</li>
+<li><strong>Rendimiento</strong>: necesitan velocidad y son más rápidos que las listas</li>
+<li><strong>Funcionalidad</strong>: SciPy y NumPy tienen funciones optimizadas, como las operaciones de álgebra lineal integradas.</li>
+</ul>
+<h3 id="memoria">Memoria<a class="anchor-link" href="#memoria">&#182;</a></h3><p>Los principales beneficios del uso de matrices NumPy deberían ser un menor consumo de memoria y un mejor comportamiento en tiempo de ejecución.</p>
+<p>Para las listas de Python: podemos concluir de esto que para cada elemento nuevo, necesitamos otros ocho bytes para la referencia al nuevo objeto. El nuevo objeto entero en sí consume 28 bytes. El tamaño de una lista lst sin el tamaño de los elementos se puede calcular con:</p>
+
+<pre><code>                    64 + 8 * len (lst) + + len (lst) * 28</code></pre>
+<p><img src="https://raw.githubusercontent.com/fralfaro/MAT281_2022/main/docs/lectures/data_manipulation/scientific_computing/images/list_structure.png" alt="Italian Trulli"></p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>NumPy ocupa menos espacio. Esto significa que una matriz entera arbitraria de longitud n en necesidades numpy se calcula por:</p>
+
+<pre><code>                    96 + n * 8 bytes</code></pre>
+<p><img src="https://raw.githubusercontent.com/fralfaro/MAT281_2022/main/docs/lectures/data_manipulation/scientific_computing/images/array_structure.png" alt="Italian Trulli"></p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Para convensernos de esto, ejecutemos un ejemplo:</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-16">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># example</span>
+
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="c1"># class: array</span>
+<span class="k">class</span> <span class="nc">Array</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Clase array que da como rsultado el tiempo y espacio en </span>
+<span class="sd">    memoria de los objetos list y numpy array</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">size_of_vec</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">size_of_vec</span> <span class="o">=</span> <span class="n">size_of_vec</span>
+
+    <span class="k">def</span> <span class="nf">pure_python_version</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Tiempo y espacio en memoria para objeto list</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">t1</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+        <span class="n">X</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">size_of_vec</span><span class="p">)</span>
+        <span class="n">Y</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">size_of_vec</span><span class="p">)</span>
+        <span class="n">Z</span> <span class="o">=</span> <span class="p">[</span><span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">Y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">X</span><span class="p">))</span> <span class="p">]</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">t1</span><span class="p">,</span><span class="n">sys</span><span class="o">.</span><span class="n">getsizeof</span><span class="p">(</span><span class="n">Z</span><span class="p">)</span> <span class="p">)</span>
+        
+    <span class="k">def</span> <span class="nf">numpy_version</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Tiempo y espacio en memoria para objeto numpy array</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">t1</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+        <span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">size_of_vec</span><span class="p">)</span>
+        <span class="n">Y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">size_of_vec</span><span class="p">)</span>
+        <span class="n">Z</span> <span class="o">=</span> <span class="n">X</span> <span class="o">+</span> <span class="n">Y</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">t1</span><span class="p">,</span><span class="n">sys</span><span class="o">.</span><span class="n">getsizeof</span><span class="p">(</span><span class="n">Z</span><span class="p">)</span> <span class="p">)</span>
+</pre></div>
+<div id="cell-16" class="clipboard-copy-txt"># example
+
+import time
+import sys
+
+# class: array
+class Array:
+    """
+    Clase array que da como rsultado el tiempo y espacio en 
+    memoria de los objetos list y numpy array
+    """
+    def __init__(self, size_of_vec):
+        self.size_of_vec = size_of_vec
+
+    def pure_python_version(self):
+        """
+        Tiempo y espacio en memoria para objeto list
+        """
+        t1 = time.time()
+        X = range(self.size_of_vec)
+        Y = range(self.size_of_vec)
+        Z = [X[i] + Y[i] for i in range(len(X)) ]
+        return (time.time() - t1,sys.getsizeof(Z) )
+        
+    def numpy_version(self):
+        """
+        Tiempo y espacio en memoria para objeto numpy array
+        """
+        t1 = time.time()
+        X = np.arange(self.size_of_vec)
+        Y = np.arange(self.size_of_vec)
+        Z = X + Y
+        return (time.time() - t1,sys.getsizeof(Z) )</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-17">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># parameters</span>
+<span class="n">size_of_vec</span> <span class="o">=</span> <span class="mi">1000000</span>
+<span class="n">class_array</span> <span class="o">=</span> <span class="n">Array</span><span class="p">(</span><span class="n">size_of_vec</span><span class="p">)</span>
+
+<span class="n">t1</span><span class="p">,</span> <span class="n">size1</span> <span class="o">=</span> <span class="n">class_array</span><span class="o">.</span><span class="n">pure_python_version</span><span class="p">()</span>
+<span class="n">t2</span><span class="p">,</span> <span class="n">size2</span> <span class="o">=</span> <span class="n">class_array</span><span class="o">.</span><span class="n">numpy_version</span><span class="p">()</span>
+</pre></div>
+<div id="cell-17" class="clipboard-copy-txt"># parameters
+size_of_vec = 1000000
+class_array = Array(size_of_vec)
+
+t1, size1 = class_array.pure_python_version()
+t2, size2 = class_array.numpy_version()</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-18">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># results</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;python list -- time: </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">t1</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span><span class="si">}</span><span class="s2"> seg, size: </span><span class="si">{</span><span class="n">size1</span><span class="si">}</span><span class="s2"> bytes&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;numpy array -- time: </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">t2</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span><span class="si">}</span><span class="s2"> seg, size: </span><span class="si">{</span><span class="n">size2</span><span class="si">}</span><span class="s2"> bytes&quot;</span><span class="p">)</span>
+</pre></div>
+<div id="cell-18" class="clipboard-copy-txt"># results
+print(f"python list -- time: {round(t1,8)} seg, size: {size1} bytes")
+print(f"numpy array -- time: {round(t2,8)} seg, size: {size2} bytes")</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>python list -- time: 0.21736741 seg, size: 8697456 bytes
+numpy array -- time: 0.00199819 seg, size: 4000112 bytes
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="ejemplo">Ejemplo<a class="anchor-link" href="#ejemplo">&#182;</a></h2><p><strong>Lista de precios:</strong></p>
 <p>El precio de venta de 3 artículos en la venta de pasteles es: 2 dolares por un brownie,  1 dolar por una galleta y 10 dolares por un pastel.</p>
 <p>Asignen estos valores a una lista denominada price (precio).</p>
@@ -2571,7 +2859,7 @@ print(f"np.arange(3).reshape((3,1)) +  np.arange(3):\n{c }" )</div>
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-16">
+            <clipboard-copy for="cell-19">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -2584,7 +2872,7 @@ print(f"np.arange(3).reshape((3,1)) +  np.arange(3):\n{c }" )</div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">price</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">price</span><span class="p">)</span>
 </pre></div>
-<div id="cell-16" class="clipboard-copy-txt">price = [2, 1, 10]
+<div id="cell-19" class="clipboard-copy-txt">price = [2, 1, 10]
 type(price)</div>
     
         </div>
@@ -2644,7 +2932,7 @@ type(price)</div>
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-17">
+            <clipboard-copy for="cell-20">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -2657,7 +2945,7 @@ type(price)</div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">quantity_sold</span> <span class="o">=</span> <span class="p">[</span><span class="mi">17</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">quantity_sold</span><span class="p">)</span>
 </pre></div>
-<div id="cell-17" class="clipboard-copy-txt">quantity_sold = [17, 40, 1]
+<div id="cell-20" class="clipboard-copy-txt">quantity_sold = [17, 40, 1]
 type(quantity_sold)</div>
     
         </div>
@@ -2716,7 +3004,7 @@ type(quantity_sold)</div>
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-18">
+            <clipboard-copy for="cell-21">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -2728,7 +3016,7 @@ type(quantity_sold)</div>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">price</span> <span class="o">*</span> <span class="n">quantity_sold</span>
 </pre></div>
-<div id="cell-18" class="clipboard-copy-txt">price * quantity_sold</div>
+<div id="cell-21" class="clipboard-copy-txt">price * quantity_sold</div>
     
         </div>
     </div>
@@ -2789,7 +3077,7 @@ Input <span class="ansi-green-intense-fg ansi-bold">In [20]</span>, in <span cla
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-19">
+            <clipboard-copy for="cell-22">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -2803,7 +3091,7 @@ Input <span class="ansi-green-intense-fg ansi-bold">In [20]</span>, in <span cla
 <span class="n">quantity_sold_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">quantity_sold</span><span class="p">)</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">price_array</span><span class="p">)</span>
 </pre></div>
-<div id="cell-19" class="clipboard-copy-txt">price_array = np.array(price)
+<div id="cell-22" class="clipboard-copy-txt">price_array = np.array(price)
 quantity_sold_array = np.array(quantity_sold)
 type(price_array)</div>
     
@@ -2863,7 +3151,7 @@ type(price_array)</div>
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-20">
+            <clipboard-copy for="cell-23">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -2875,7 +3163,7 @@ type(price_array)</div>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">price_array</span> <span class="o">*</span> <span class="n">quantity_sold_array</span>
 </pre></div>
-<div id="cell-20" class="clipboard-copy-txt">price_array * quantity_sold_array</div>
+<div id="cell-23" class="clipboard-copy-txt">price_array * quantity_sold_array</div>
     
         </div>
     </div>
@@ -2933,7 +3221,7 @@ type(price_array)</div>
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-21">
+            <clipboard-copy for="cell-24">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -2945,7 +3233,7 @@ type(price_array)</div>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">cost_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.50</span><span class="p">,</span> <span class="mf">5.00</span><span class="p">])</span>
 </pre></div>
-<div id="cell-21" class="clipboard-copy-txt">cost_array = np.array([0.25, 0.50, 5.00])</div>
+<div id="cell-24" class="clipboard-copy-txt">cost_array = np.array([0.25, 0.50, 5.00])</div>
     
         </div>
     </div>
@@ -2977,7 +3265,7 @@ type(price_array)</div>
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-22">
+            <clipboard-copy for="cell-25">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -2990,7 +3278,7 @@ type(price_array)</div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">profit_array</span> <span class="o">=</span> <span class="n">price_array</span> <span class="o">-</span> <span class="n">cost_array</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">profit_array</span><span class="p">)</span>
 </pre></div>
-<div id="cell-22" class="clipboard-copy-txt">profit_array = price_array - cost_array
+<div id="cell-25" class="clipboard-copy-txt">profit_array = price_array - cost_array
 print(profit_array)</div>
     
         </div>
@@ -3047,7 +3335,7 @@ print(profit_array)</div>
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-23">
+            <clipboard-copy for="cell-26">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3059,7 +3347,7 @@ print(profit_array)</div>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">profit_array</span> <span class="o">&gt;</span> <span class="mf">2.00</span>
 </pre></div>
-<div id="cell-23" class="clipboard-copy-txt">profit_array > 2.00</div>
+<div id="cell-26" class="clipboard-copy-txt">profit_array > 2.00</div>
     
         </div>
     </div>
@@ -3116,7 +3404,7 @@ print(profit_array)</div>
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-24">
+            <clipboard-copy for="cell-27">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3130,7 +3418,7 @@ print(profit_array)</div>
 <span class="n">price_array2</span> <span class="o">=</span> <span class="n">price_array</span> <span class="o">+</span> <span class="mi">7</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">price_array2</span><span class="p">)</span>
 </pre></div>
-<div id="cell-24" class="clipboard-copy-txt"># adicion
+<div id="cell-27" class="clipboard-copy-txt"># adicion
 price_array2 = price_array + 7
 print(price_array2)</div>
     
@@ -3175,7 +3463,7 @@ print(price_array2)</div>
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-25">
+            <clipboard-copy for="cell-28">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3189,7 +3477,7 @@ print(price_array2)</div>
 <span class="n">price_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">price_array</span><span class="p">,</span> <span class="p">[</span><span class="mf">4.50</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">price_array</span><span class="p">)</span>
 </pre></div>
-<div id="cell-25" class="clipboard-copy-txt"># agregar elementos
+<div id="cell-28" class="clipboard-copy-txt"># agregar elementos
 price_array = np.append(price_array, [4.50, 3, 4, 9])
 print(price_array)</div>
     
@@ -3234,7 +3522,7 @@ print(price_array)</div>
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-26">
+            <clipboard-copy for="cell-29">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3248,7 +3536,7 @@ print(price_array)</div>
 <span class="n">price_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">price_array</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">price_array</span><span class="p">)</span>
 </pre></div>
-<div id="cell-26" class="clipboard-copy-txt"># Eliminar
+<div id="cell-29" class="clipboard-copy-txt"># Eliminar
 price_array = np.delete(price_array, -1)
 print(price_array)</div>
     
@@ -3293,7 +3581,7 @@ print(price_array)</div>
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-27">
+            <clipboard-copy for="cell-30">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -3307,7 +3595,7 @@ print(price_array)</div>
 <span class="n">price_array</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">12</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">price_array</span><span class="p">)</span>
 </pre></div>
-<div id="cell-27" class="clipboard-copy-txt"># reemplazar
+<div id="cell-30" class="clipboard-copy-txt"># reemplazar
 price_array[2] = 12
 print(price_array)</div>
     
