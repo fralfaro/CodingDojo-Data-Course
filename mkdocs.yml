@@ -93,8 +93,8 @@ nav:
     - 1-PythonBasics/1-PythonBasics.ipynb
     - 1.5-numpy/1.5-numpy.ipynb
     - 2-Pandas/2-Pandas.ipynb
-    #- 3-Matplotlib/3-Matplotlib.ipynb
-    #- 4-StatisticalInference/4-StatisticalInference.ipynb
+    - 3-Matplotlib/3-Matplotlib.ipynb
+    - 4-StatisticalInference/4-StatisticalInference.ipynb
     #- 5-IntroML/5-IntroML.ipynb
     #- 6-RegressionModels/6-RegressionModels.ipynb
     #- 7-ClassificationModels/7-ClassificationModels.ipynb
