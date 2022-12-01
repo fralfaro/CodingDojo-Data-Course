@@ -7,7 +7,7 @@ En este bootcamp te sumerges en los fundamentos del Data Science y el Machine Le
 
 ¡Te graduarás con una cartera de proyectos que demostrarán tu perspicacia en Data Science a tus futuros empleadores!
 
-> **Nota**: Para mayor información del bootcamp, consultar el siguiente [link](https://www.codingdojo.la/data-science/)...
+> **Nota**: Para mayor información del bootcamp, consultar el siguiente [link](https://www.codingdojo.la/data-science/).
 
 
 
