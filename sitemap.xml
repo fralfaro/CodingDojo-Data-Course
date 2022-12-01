@@ -35,4 +35,24 @@
          <lastmod>2022-12-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://github.com/fralfaro/CodingDojo-DataScience/5-IntroML/5-IntroML/</loc>
+         <lastmod>2022-12-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/CodingDojo-DataScience/6-RegressionModels/6-RegressionModels/</loc>
+         <lastmod>2022-12-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/CodingDojo-DataScience/7-ClassificationModels/7-ClassificationModels/</loc>
+         <lastmod>2022-12-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/CodingDojo-DataScience/8-Boosting/8-Boosting/</loc>
+         <lastmod>2022-12-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>
