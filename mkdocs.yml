@@ -99,12 +99,12 @@ nav:
     - 6-RegressionModels/6-RegressionModels.ipynb
     - 7-ClassificationModels/7-ClassificationModels.ipynb
     - 8-Boosting/8-Boosting.ipynb
-    #- 9-UnsupervisedLearning/9-UnsupervisedLearning.ipynb
-    #- 10-DimensionalityReduction/10-DimensionalityReduction.ipynb
-    #- 11-NeuralNetworks/11-NeuralNetworks.ipynb
-    #- SQL:
-    #    - 12-SQL/12-SQL-md.md
-    #    - 12-SQL/12-SQL.ipynb
+    - 9-UnsupervisedLearning/9-UnsupervisedLearning.ipynb
+    - 10-DimensionalityReduction/10-DimensionalityReduction.ipynb
+    - 11-NeuralNetworks/11-NeuralNetworks.ipynb
+    - SQL:
+        - 12-SQL/12-SQL-md.md
+        - 12-SQL/12-SQL.ipynb
 
 
 
