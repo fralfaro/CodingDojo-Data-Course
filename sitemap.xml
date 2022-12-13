@@ -21,6 +21,26 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/fralfaro/CodingDojo-DataScience/10-DimensionalityReduction/10-DimensionalityReduction/</loc>
+         <lastmod>2022-12-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/CodingDojo-DataScience/11-NeuralNetworks/11-NeuralNetworks/</loc>
+         <lastmod>2022-12-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/CodingDojo-DataScience/12-SQL/12-SQL-md/</loc>
+         <lastmod>2022-12-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/CodingDojo-DataScience/12-SQL/12-SQL/</loc>
+         <lastmod>2022-12-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/fralfaro/CodingDojo-DataScience/2-Pandas/2-Pandas/</loc>
          <lastmod>2022-12-13</lastmod>
          <changefreq>daily</changefreq>
@@ -52,6 +72,11 @@
     </url>
     <url>
          <loc>https://github.com/fralfaro/CodingDojo-DataScience/8-Boosting/8-Boosting/</loc>
+         <lastmod>2022-12-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/CodingDojo-DataScience/9-UnsupervisedLearning/9-UnsupervisedLearning/</loc>
          <lastmod>2022-12-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
