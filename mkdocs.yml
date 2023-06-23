@@ -105,6 +105,8 @@ nav:
     - SQL:
         - 12-SQL/12-SQL-md.md
         - 12-SQL/12-SQL.ipynb
+    - Extras:
+        - extra_project_template/template.ipynb
 
 
 
