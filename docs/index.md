@@ -3,10 +3,11 @@
 <img src="images/logo_cd2.png" alt="" width="130px" align="left"/>
 <img src="images/logo_cd2.png" alt="" width="130px" align="right"/>
 <div align="center">
-<h2>Bootcamp Data Science</h2>
+<h2>Bootcamp Data Science  <br/> Julio 2023 </h2>
 <b>Instructor Principal:</b> Francisco Alfaro <br/>
-<b>Instructor Asistente:</b> Marco Fernandini <br/><br/><br/>
+<b>Instructor Asistente:</b> Jesus Ortiz <br/><br/><br/>
 </div>
+
 
 # **Bienvienidos a Coding Dojo**
 
